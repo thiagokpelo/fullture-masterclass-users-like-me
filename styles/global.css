@@ -1,0 +1,27 @@
+/* seletor {
+    propriedade: valor;
+    propriedade: valor;
+    propriedade: valor;
+} */
+
+/* h1 {
+    color: red;
+    font-size:
+} */
+
+body {
+    background-image: linear-gradient(to bottom, #9122f3 0%, #9122f3 10%, #fff 10%, #fff 100%);
+}
+
+h2 {
+    font-size: 42px;
+    text-align: center;
+    margin-top: 48px;
+    margin-bottom: 24px;
+    color: #fff;
+}
+
+main section img {
+    width: 300px;
+    height: 300px;
+}

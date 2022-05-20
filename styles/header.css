@@ -1,0 +1,17 @@
+.header {
+    position: sticky;
+    top: 0;
+    background-color: #9122f3;
+    padding: 16px 12.5%;
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.header__logo {
+    display: inline-block;
+    color: #fff;
+}
+
+.header__menu {
+    float: right;
+}
