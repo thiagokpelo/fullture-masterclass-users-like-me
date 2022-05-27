@@ -1,0 +1,13 @@
+.layout {
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+}
+
+.layout__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    grid-template-areas:
+     "title title"
+     "panel panel";
+}

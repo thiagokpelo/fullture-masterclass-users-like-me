@@ -10,18 +10,11 @@
 } */
 
 body {
-    background-image: linear-gradient(to bottom, #9122f3 0%, #9122f3 10%, #fff 10%, #fff 100%);
+    background-image: linear-gradient(to bottom, #9122f3 0%, #9122f3 20%, #fff 20%, #fff 100%);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #696969;
 }
 
-h2 {
-    font-size: 42px;
-    text-align: center;
-    margin-top: 48px;
-    margin-bottom: 24px;
-    color: #fff;
-}
-
-main section img {
-    width: 300px;
-    height: 300px;
+a {
+    color: inherit;
 }

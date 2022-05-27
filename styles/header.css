@@ -1,17 +1,33 @@
 .header {
     position: sticky;
     top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: #9122f3;
-    padding: 16px 12.5%;
-    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.5);
+    padding: 16px;
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.24);
     z-index: 10;
+    color: #fff;
 }
 
 .header__logo {
     display: inline-block;
-    color: #fff;
+    font-size: 24px;
 }
 
-.header__menu {
-    float: right;
+.header__logo a {
+    text-decoration: none;
+}
+
+.header__logo a:hover {
+    text-decoration: underline;
+}
+
+.header__menu__button {
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    color: inherit;
+    cursor: pointer;
 }

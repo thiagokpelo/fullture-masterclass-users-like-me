@@ -11,14 +11,21 @@
 
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/panel.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/card.css">
+    <link rel="stylesheet" href="styles/texts.css">
+    <link rel="stylesheet" href="styles/images.css">
+    <link rel="stylesheet" href="styles/recommendation.css">
 </head>
 <body>
 
-    <header class="header">
-        <h1 class="header__logo">users_like.me</h1>
+    <header class="header layout">
+        <h1 class="header__logo">
+            <a href="index.html">users_like.me</a>
+        </h1>
 
         <div class="header__menu">
-            <button>following 1 user &#9660;</button>
+            <button class="header__menu__button">following 1 user &#9660;</button>
 
             <ul style="display:none;">
                 <li>
@@ -40,92 +47,112 @@
         </div>
     </header>
 
-    <main>
-        <h2>Find new users like you</h2>
+    <main class="layout">
+        <div class="layout__grid">
+            <h2 class="title">Find new users like you</h2>
 
-        <section class="panel">
-            <div class="panel__hero"></div>
-            <img class="panel__thumb" src="./images/imagem1.jpg" alt="Foto de perfil da First + Last name">
-    
-            <button class="panel__button">Follow</button>
-    
-            <button class="panel__button_secondary">try the next one</button>
-        
-            <h3 class="panel__title">First + Last name</h3>
-        
-            <adress class="panel__address">city, country</adress>
-    
-        </section>
-        
-        <section>
-            <h4>Personal info</h4>
-        
-            <ul>
-                <li>born at: US</li>
-                <li>age: 24 years old</li>
-            </ul>
+            <section class="panel card">
+                <div class="panel__hero"></div>
+                
+                <div class="panel__content card__content">
+                    <img class="thumb thumb--large panel__thumb" src="./images/imagem1.jpg" alt="Foto de perfil da First + Last name">
 
-            <button>&#9660; see more</button>
-        </section>
+                    <div class="panel__content__actions">
+                        <button class="panel__button">Follow</button>
+            
+                        <button class="panel__button_secondary">try the next one</button>
+                    </div>
+                
+                    <h3 class="panel__title">First + Last name</h3>
+                
+                    <adress class="panel__address">city, country</adress>
+                </div>
+            </section>
+            
+            <section class="card">
+                <div class="card__content">
+                    <h4 class="subtitle__card">Personal info</h4>
+            
+                    <ul class="card__list">
+                        <li class="card__list__item">Born at: US</li>
+                        <li class="card__list__item">Age: 24 years old</li>
+                    </ul>
+                </div>
 
-        <section>
-            <h4>contact info</h4>
+                <button class="card__button_extended">&#9660; see more</button>
+            </section>
 
-            <ul>
-                <li>email: <a href="mailto:mail@mail.com">mail@mail.com</a></li>
-                <li>phone: <a href="tel:+5511900000000">(11) 90000-0000</a></li>
-            </ul>
-    
-            <button>&#9660; see more</button>
-        </section>
+            <section class="card">
+                <div class="card__content">
+                    <h4 class="subtitle__card">Contact info</h4>
+
+                    <ul class="card__list">
+                        <li class="card__list__item">Email: <a href="mailto:mail@mail.com">mail@mail.com</a></li>
+                        <li class="card__list__item">Phone: <a href="tel:+5511900000000">(11) 90000-0000</a></li>
+                    </ul>
+                </div>
+        
+                <button class="card__button_extended">&#9660; see more</button>
+            </section>
+        </div>
     </main>
 
-    <aside>
+    <aside class="layout">
         <h2>Suggestion 4you</h2>
 
-        <article>
-            <img src="./images/imagem2.jpg" alt="Foto do John Doe">
-
-            <h3>John Doe</h3>
-            <h4>CEO</h4>
-
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-
-            <button>Follow</button>
-        </article>
-
-        <article>
-            <img src="./images/imagem3.jpeg" alt="Foto da Maria da Luz">
-
-            <h3>Maria da Luz</h3>
-            <h4>CEO</h4>
-
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-
-            <button>Follow</button>
-        </article>
-
-        <article>
-            <img src="./images/imagem4.png" alt="Foto da Maria da Luz">
-
-            <h3>Maria da Luz</h3>
-            <h4>CEO</h4>
-
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-
-            <button>Follow</button>
-        </article>
-
-        <article>
-            <img src="./images/imagem5.jpg" alt="Foto da Maria da Luz">
-
-            <h3>Maria da Luz</h3>
-            <h4>CEO</h4>
-
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-
-            <button>Follow</button>
-        </article>
+        <div class="recommendation">
+            <article class="card">
+                <div class="card__content--small">
+                    <img class="thumb thumb--small" src="./images/imagem2.jpg" alt="Foto do John Doe">
+    
+                    <h3>John Doe</h3>
+                    <h4>CEO</h4>
+        
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        
+                    <button>Follow</button>
+                </div>
+            </article>
+    
+            <article class="card">
+                <div class="card__content--small">
+                    <img class="thumb thumb--small" src="./images/imagem3.jpeg" alt="Foto da Maria da Luz">
+    
+                    <h3>Maria da Luz</h3>
+                    <h4>CEO</h4>
+        
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        
+                    <button>Follow</button>
+                </div>
+            </article>
+    
+            <article class="card">
+                <div class="card__content--small">
+                    <img class="thumb thumb--small" src="./images/imagem4.png" alt="Foto da Maria da Luz">
+    
+                    <h3>Maria da Luz</h3>
+                    <h4>CEO</h4>
+        
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        
+                    <button>Follow</button>
+                </div>
+            </article>
+    
+            <article class="card">
+               <div class="card__content--small">
+                    <img class="thumb thumb--small" src="./images/imagem5.jpg" alt="Foto da Maria da Luz">
+        
+                    <h3>Maria da Luz</h3>
+                    <h4>CEO</h4>
+        
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        
+                    <button>Follow</button>
+               </div>
+            </article>
+        </div>
     </aside>
 
     <footer>
