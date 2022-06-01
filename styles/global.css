@@ -1,0 +1,20 @@
+/* seletor {
+    propriedade: valor;
+    propriedade: valor;
+    propriedade: valor;
+} */
+
+/* h1 {
+    color: red;
+    font-size:
+} */
+
+body {
+    background-image: linear-gradient(to bottom, #9122f3 0%, #9122f3 20%, #fff 20%, #fff 100%);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #696969;
+}
+
+a {
+    color: inherit;
+}

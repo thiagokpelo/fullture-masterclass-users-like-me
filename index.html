@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>users_like.me</title>
+
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/global.css">
+
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/panel.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/card.css">
+    <link rel="stylesheet" href="styles/texts.css">
+    <link rel="stylesheet" href="styles/images.css">
+    <link rel="stylesheet" href="styles/recommendation.css">
+</head>
+<body>
+
+    <header class="header layout">
+        <h1 class="header__logo">
+            <a href="index.html">users_like.me</a>
+        </h1>
+
+        <div class="header__menu">
+            <button class="header__menu__button">following 1 user &#9660;</button>
+
+            <ul style="display:none;">
+                <li>
+                    <img src="./images/imagem2.jpg" alt="Foto do John Doee">
+                    <span>John Doe</span>
+                    <address>city, country</address>
+
+                    <button>unfollow</button>
+                </li>
+
+                <li>
+                    <img src="./images/imagem3.jpeg" alt="Foto da Maria">
+                    <span>Maria da Luz</span>
+                    <address>city, country</address>
+
+                    <button>unfollow</button>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="layout">
+        <div class="layout__grid">
+            <h2 class="title">Find new users like you</h2>
+
+            <section class="panel card">
+                <div class="panel__hero"></div>
+                
+                <div class="panel__content card__content">
+                    <img class="thumb thumb--large panel__thumb" src="./images/imagem1.jpg" alt="Foto de perfil da First + Last name">
+
+                    <div class="panel__content__actions">
+                        <button class="panel__button">Follow</button>
+            
+                        <button class="panel__button_secondary">try the next one</button>
+                    </div>
+                
+                    <h3 class="panel__title">First + Last name</h3>
+                
+                    <adress class="panel__address">city, country</adress>
+                </div>
+            </section>
+            
+            <section class="card">
+                <div class="card__content">
+                    <h4 class="subtitle__card">Personal info</h4>
+            
+                    <ul class="card__list">
+                        <li class="card__list__item">Born at: US</li>
+                        <li class="card__list__item">Age: 24 years old</li>
+                    </ul>
+                </div>
+
+                <button class="card__button_extended">&#9660; see more</button>
+            </section>
+
+            <section class="card">
+                <div class="card__content">
+                    <h4 class="subtitle__card">Contact info</h4>
+
+                    <ul class="card__list">
+                        <li class="card__list__item">Email: <a href="mailto:mail@mail.com">mail@mail.com</a></li>
+                        <li class="card__list__item">Phone: <a href="tel:+5511900000000">(11) 90000-0000</a></li>
+                    </ul>
+                </div>
+        
+                <button class="card__button_extended">&#9660; see more</button>
+            </section>
+        </div>
+    </main>
+
+    <aside class="layout">
+        <h2>Suggestion 4you</h2>
+
+        <div class="recommendation">
+            <article class="card">
+                <div class="card__content--small">
+                    <img class="thumb thumb--small" src="./images/imagem2.jpg" alt="Foto do John Doe">
+    
+                    <h3>John Doe</h3>
+                    <h4>CEO</h4>
+        
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        
+                    <button>Follow</button>
+                </div>
+            </article>
+    
+            <article class="card">
+                <div class="card__content--small">
+                    <img class="thumb thumb--small" src="./images/imagem3.jpeg" alt="Foto da Maria da Luz">
+    
+                    <h3>Maria da Luz</h3>
+                    <h4>CEO</h4>
+        
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        
+                    <button>Follow</button>
+                </div>
+            </article>
+    
+            <article class="card">
+                <div class="card__content--small">
+                    <img class="thumb thumb--small" src="./images/imagem4.png" alt="Foto da Maria da Luz">
+    
+                    <h3>Maria da Luz</h3>
+                    <h4>CEO</h4>
+        
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        
+                    <button>Follow</button>
+                </div>
+            </article>
+    
+            <article class="card">
+               <div class="card__content--small">
+                    <img class="thumb thumb--small" src="./images/imagem5.jpg" alt="Foto da Maria da Luz">
+        
+                    <h3>Maria da Luz</h3>
+                    <h4>CEO</h4>
+        
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        
+                    <button>Follow</button>
+               </div>
+            </article>
+        </div>
+    </aside>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#">Quem somos</a></li>
+                <li><a href="#">Suporte</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
