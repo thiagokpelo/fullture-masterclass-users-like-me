@@ -21,6 +21,7 @@
   "homepage": "https://github.com/thiagokpelo/fullture-masterclass-users-like-me#readme",
   "devDependencies": {
     "gh-pages": "^4.0.0",
-    "live-server": "^1.2.2"
+    "live-server": "^1.2.2",
+    "ngrok": "^4.3.1"
   }
 }
