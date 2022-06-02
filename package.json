@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm run dev && npm run tunnel",
     "dev": "live-server --port=8080 --watch=. --entry-file=index.html",
-    "tunnel": "ngrok http 8080",
+    "tunnel": "lt --port 8080",
     "deploy": "gh-pages -d . -b production --remove node_modules .github package.json package-lock.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -23,6 +23,7 @@
   "homepage": "https://github.com/thiagokpelo/fullture-masterclass-users-like-me#readme",
   "devDependencies": {
     "gh-pages": "^4.0.0",
-    "live-server": "^1.2.2"
+    "live-server": "^1.2.2",
+    "localtunnel": "^2.0.2"
   }
 }
