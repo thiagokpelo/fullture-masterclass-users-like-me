@@ -4,57 +4,93 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>users_like.me | Contato</title>
+
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+
+    <meta name="application-name" content="Users Like Me"/>
+    <meta name="msapplication-TileColor" content="#9122F3" />
+    <meta name="msapplication-TileImage" content="images/mstile-144x144.png" />
+
+    <title>users_like.me | Contact</title>
+
+<!--    <link rel="stylesheet" href="styles/reset.css">-->
+<!--    <link rel="stylesheet" href="styles/global.css">-->
+
+<!--    <link rel="stylesheet" href="styles/header.css">-->
+<!--    <link rel="stylesheet" href="styles/texts.css">-->
+<!--    <link rel="stylesheet" href="styles/layout.css">-->
+<!--    <link rel="stylesheet" href="styles/card.css">-->
+<!--    <link rel="stylesheet" href="styles/form.css">-->
+
 </head>
 <body>
-    <header>
-        <a href="index.html">&#10094; Voltar</a>
+    <header class="layout header">
+        <a href="index.html">&#10094; Go back</a>
     </header>
     
-    <main>
-        <h1>Contato</h1>
+    <main class="layout">
+        <h1 class="title">Contact</h1>
 
-        <form>
-            <label for="name">Name</label>
-            <input id="name" type="text" placeholder="Thiago" required>
+        <form class="card">
+            <div class="card__content form__content">
+                <div class="form__group form__group__column">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" placeholder="Thiago Kpelo" required>
+                </div>
 
-            <label for="email">Email</label>
-            <input id="email" type="email">
+                <div class="form__group form__group__column form__field--width-50">
+                    <label for="email">Email</label>
+                    <input id="email" email="email" type="email" placeholder="thiagokpelo@gmail.com" required>
+                </div>
 
-            <label for="phone">Phone</label>
-            <input id="phone" type="tel">
+                <div class="form__group form__group__column form__field--width-50">
+                    <label for="phone">Phone</label>
+                    <input id="phone" name="phone" type="tel" placeholder="(11) 90000 0000">
+                </div>
 
-            <label for="message">Message</label>
-            <textarea id="message" cols="30" rows="10" minlength="3" maxlength="10" required></textarea>
+                <div class="form__group form__group__column">
+                    <label for="message">Message</label>
+                    <textarea placeholder="Your message..." id="message" name="message" cols="30" rows="10" minlength="3" maxlength="10" required></textarea>
+                </div>
 
-            <input id="newsletter" type="checkbox" name="news">
-            <label for="newsletter">Voce gostaria de receber nossa newsletter?</label>
+                <fieldset>
+                    <legend>Subject</legend>
 
-            <input id="newsletter1" type="checkbox" name="news">
-            <label for="newsletter1">Voce gostaria de receber nossa newsletter?</label>
+                    <div class="form__group">
+                        <input id="problem" type="radio" name="subject" value="problem" required>
+                        <label for="problem">Problem</label>
+                    </div>
 
-            <input id="newsletter2" type="checkbox" name="news">
-            <label for="newsletter2">Voce gostaria de receber nossa newsletter?</label>
+                    <div class="form__group">
+                        <input id="suggestion" type="radio" name="subject" value="suggestion" required>
+                        <label for="suggestion">Suggestion</label>
+                    </div>
 
-            <input id="banana" type="radio" name="frutas">
-            <label for="banana">Banana</label>
+                    <div class="form__group">
+                        <input id="other" type="radio" name="subject" value="other" required>
+                        <label for="other">Other</label>
+                    </div>
+                </fieldset>
 
-            <input id="maca" type="radio" name="frutas">
-            <label for="maca">Maçã</label>
+                <div class="form__group">
+                    <input id="newsletter" type="checkbox" name="news">
+                    <label for="newsletter">Would you like to receive our newsletter?</label>
+                </div>
 
-            <input id="pera" type="radio" name="frutas">
-            <label for="pera">Pera</label>
-            
-            <button type="submit">Send</button>
+                <button type="submit">Send</button>
+            </div>
         </form>
     </main>
 
     <footer>
         <nav>
             <ul>
-                <li><a href="#">Quem somos</a></li>
-                <li><a href="#">Suporte</a></li>
-                <li><a href="contato.html">Contato</a></li>
+                <li><a href="#">How we are</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="contato.html">Contact</a></li>
             </ul>
         </nav>
     </footer>

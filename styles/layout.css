@@ -5,9 +5,18 @@
 
 .layout__grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     gap: 16px;
+    grid-template-columns: 1fr;
     grid-template-areas:
-     "title title"
-     "panel panel";
+     "title"
+     "panel";
+}
+
+@media screen and (min-width: 600px) {
+    .layout__grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+         "title title"
+         "panel panel";
+    }
 }
