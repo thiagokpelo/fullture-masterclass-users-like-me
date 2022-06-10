@@ -27,6 +27,10 @@
     font-weight: bold;
 }
 
+.card__button_extended:hover {
+    background-color: #d0d7de;
+}
+
 .card__list__item {
     line-height: 1.8em;
 }

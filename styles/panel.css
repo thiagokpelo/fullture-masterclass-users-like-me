@@ -38,34 +38,7 @@
     margin-bottom: 16px;
 }
 
-.panel__button {
-    background-color: #3e98ef;
-    border: 1px solid #2171be;
-    padding: 8px 16px;
-    border-radius: 8px;
-    cursor: pointer;
-    color: #fff;
-}
-
-.panel__button:hover {
-    background-color: #2171be;
-}
-
-.panel__button_secondary {
-    background-color: #fff;
-    border: 1px solid #d0d7de;
-    padding: 8px 16px;
-    border-radius: 8px;
-    cursor: pointer;
-    float: right;
-}
-
-.panel__button_secondary:hover {
-    background-color: #d0d7de;
-}
-
 .panel__title {
-    font-size: 24px;
     text-align: center;
 }
 

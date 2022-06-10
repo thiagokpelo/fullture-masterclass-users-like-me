@@ -1,4 +1,22 @@
 .recommendation {
-    display: flex;
+    display: grid;
     gap: 16px;
+}
+
+@media screen and (min-width: 600px) {
+    .recommendation {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .recommendation {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .recommendation {
+        grid-template-columns: repeat(8, 1fr);
+    }
 }
