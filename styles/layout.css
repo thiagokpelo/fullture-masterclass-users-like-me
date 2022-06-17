@@ -5,7 +5,7 @@
 
 .layout__grid {
     display: grid;
-    gap: 16px;
+    gap: 1rem;
     grid-template-columns: 1fr;
     grid-template-areas:
      "title"

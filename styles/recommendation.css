@@ -1,6 +1,6 @@
 .recommendation {
     display: grid;
-    gap: 16px;
+    gap: 1rem;
 }
 
 @media screen and (min-width: 600px) {

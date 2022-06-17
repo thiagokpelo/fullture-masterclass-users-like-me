@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Roboto:wght@100;400;700&display=swap');
+
+@import "../variables.css";
+
+@import "../reset.css";
+@import "../global.css";
+
+@import "../header.css";
+@import "../footer.css";
+@import "../button.css";
+@import "../layout.css";
+@import "../card.css";
+@import "../texts.css";
+@import "../form.css";

@@ -1,40 +1,40 @@
 .button {
     border: 1px solid;
-    padding: 8px 16px;
-    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius-medium);
 }
 
 .button--primary {
-    color: #fff;
-    background-color: #3e98ef;
-    border-color: #2171be;
+    color: var(--white);
+    background-color: var(--blue);
+    border-color: var(--blue-dark);
 }
 
 .button--primary:hover {
-    background-color: #2171be;
+    background-color: var(--blue-dark);
 }
 
 .button--secondary {
-    background-color: #fff;
-    border-color: #d0d7de;
+    background-color: var(--white);
+    border-color: var(--gray);
 }
 
 .button--secondary:hover {
-    background-color: #d0d7de;
+    background-color: var(--gray);
 }
 
 .button--danger {
-    color: #fff;
-    background-color: #ff6347;
-    border-color: #ff0000;
+    color: var(--white);
+    background-color: var(--red-light);
+    border-color: var(--red);
 }
 
 .button--danger:hover {
-    background-color: #ff0000;
+    background-color: var(--red);
 }
 
 .button--small {
-    font-size: 10px;
-    padding: 4px 8px;
-    border-radius: 4px;
+    font-size: 0.625rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: var(--radius-small);
 }
