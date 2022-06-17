@@ -2,16 +2,16 @@
     grid-area: title;
     text-align: center;
     margin-top: 48px;
-    margin-bottom: 24px;
-    color: #fff;
+    margin-bottom: 1.5rem;
+    color: var(--white);
 }
 
 .subtitle__card {
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
 }
 
 .subtitle {
-    margin: 24px 0;
+    margin: 1.5rem 0;
 }
 
 .title--large {
@@ -19,22 +19,22 @@
 }
 
 .title--medium {
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .subtitle--large {
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .subtitle--medium {
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .subtitle--small {
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .subtitle--x-small {

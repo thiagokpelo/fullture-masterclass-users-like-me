@@ -5,26 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/apple-touch-icon-152x152.png" />
-    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
-
-    <meta name="application-name" content="Users Like Me"/>
-    <meta name="msapplication-TileColor" content="#9122F3" />
-    <meta name="msapplication-TileImage" content="images/mstile-144x144.png" />
-
     <title>users_like.me | Contact</title>
 
-<!--    <link rel="stylesheet" href="styles/reset.css">-->
-<!--    <link rel="stylesheet" href="styles/global.css">-->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <!--    <link rel="manifest" href="site.webmanifest">-->
 
-<!--    <link rel="stylesheet" href="styles/header.css">-->
-<!--    <link rel="stylesheet" href="styles/texts.css">-->
-<!--    <link rel="stylesheet" href="styles/layout.css">-->
-<!--    <link rel="stylesheet" href="styles/card.css">-->
-<!--    <link rel="stylesheet" href="styles/form.css">-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+    <link rel="stylesheet" href="styles/pages/contact.css">
 </head>
 <body>
     <header class="layout header">
@@ -32,7 +23,7 @@
     </header>
     
     <main class="layout">
-        <h1 class="title">Contact</h1>
+        <h1 class="title title--large">Contact</h1>
 
         <form class="card">
             <div class="card__content form__content">
@@ -80,17 +71,17 @@
                     <label for="newsletter">Would you like to receive our newsletter?</label>
                 </div>
 
-                <button type="submit">Send</button>
+                <button class="button button--primary" type="submit">Send</button>
             </div>
         </form>
     </main>
 
-    <footer>
+    <footer class="footer">
         <nav>
-            <ul>
-                <li><a href="#">How we are</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a href="contato.html">Contact</a></li>
+            <ul class="footer__list">
+                <li class="footer__list__item"><a href="#">How we are</a></li>
+                <li class="footer__list__item"><a href="#">Support</a></li>
+                <li class="footer__list__item"><a href="contato.html">Contact</a></li>
             </ul>
         </nav>
     </footer>

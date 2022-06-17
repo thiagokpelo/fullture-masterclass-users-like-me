@@ -14,7 +14,7 @@
 
 .panel__hero {
     /* background: #fff url() no-repeat cover; */
-    background-color: #fff;
+    background-color: var(--white);
     background-image: url("../images/imagem1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -35,7 +35,7 @@
 .panel__content__actions {
     display: flex;
     gap: 8px;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
 }
 
 .panel__title {
@@ -43,6 +43,6 @@
 }
 
 .panel__address {
-    font-weight: bold;
+    font-weight: 700;
     text-align: center;
 }

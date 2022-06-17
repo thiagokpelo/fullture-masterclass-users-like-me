@@ -1,6 +1,6 @@
 .form__content {
     display: flex;
-    gap: 16px;
+    gap: 1rem;
     flex-wrap: wrap;
 }
 
@@ -24,9 +24,9 @@ input[type="email"],
 input[type="tel"],
 textarea {
     width: 100%;
-    border: 1px solid #d0d7de;
-    border-radius: 12px;
-    padding: 16px;
+    border: 1px solid var(--gray);
+    border-radius: var(--radius-large);
+    padding: 1rem;
 }
 
 fieldset {

@@ -1,16 +1,16 @@
 .thumb {
     object-fit: cover;
-    border-radius: 50%;
-    width: 64px;
-    height: 64px;
+    border-radius: var(--radius-circle);
+    width: 4rem;
+    height: 4rem;
 }
 
 .thumb--small {
-    width: 48px;
-    height: 48px;
+    width: 3rem;
+    height: 3rem;
 }
 
 .thumb--large {
-    width: 200px;
-    height: 200px;
+    width: 12.5rem;
+    height: 12.5rem;
 }
