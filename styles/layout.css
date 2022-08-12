@@ -1,4 +1,17 @@
 .layout {
-    padding-left: 12.5%;
-    padding-right: 12.5%;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.app-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 56px auto auto 128px;
+}
+
+@media screen and (min-width: 600px) {
+    .layout {
+        padding-left: 12.5%;
+        padding-right: 12.5%;
+    }
 }

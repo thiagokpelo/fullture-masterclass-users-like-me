@@ -1,0 +1,11 @@
+.app-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+@media screen and (min-width: 600px) {
+    .app-main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

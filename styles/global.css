@@ -1,7 +1,18 @@
+body {
+    color: #696969;
+    font-family: Helvetica, Arial, sans-serif;
+    background-image: linear-gradient(to bottom, #9122f3 0%, #9122f3 20%, #fff 20%, #fff 100%);
+}
+
 a {
     color: inherit;
 }
 
 a:hover {
     color: #000;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
 }

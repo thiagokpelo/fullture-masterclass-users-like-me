@@ -1,0 +1,30 @@
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.24);
+    overflow: hidden;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+}
+
+.card-content-small {
+    padding: 16px;
+}
+
+.card-footer-button {
+    border: 0;
+    border-top: 1px solid #efefef;
+    width: 100%;
+    text-align: left;
+    padding: 16px 24px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.card-footer-button:hover {
+    background-color: #efefef;
+}

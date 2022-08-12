@@ -1,0 +1,11 @@
+.app-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}

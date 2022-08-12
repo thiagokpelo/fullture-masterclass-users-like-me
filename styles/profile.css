@@ -1,0 +1,35 @@
+.profile-content-center {
+    align-items: center;
+}
+
+.profile-hero {
+    width: 100%;
+    height: 150px;
+    background-image: url("../images/imagem1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    margin-bottom: -150px;
+    transform: scale(1.2);
+}
+
+.profile-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.profile-subtitle {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.profile-actions-group {
+    margin: 16px auto;
+}
+
+@media screen and (min-width: 600px) {
+    .profile {
+        grid-column: span 2;
+    }
+}

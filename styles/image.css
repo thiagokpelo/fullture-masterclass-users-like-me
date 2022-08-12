@@ -1,0 +1,15 @@
+.thumb {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.thumb-large {
+    width: 200px;
+    height: 200px;
+}
