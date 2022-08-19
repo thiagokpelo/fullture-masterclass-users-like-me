@@ -4,6 +4,13 @@
     gap: 16px;
 }
 
+.app-title {
+    color: var(--white);
+    margin-top: 42px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
 @media screen and (min-width: 600px) {
     .app-main {
         grid-template-columns: repeat(2, 1fr);

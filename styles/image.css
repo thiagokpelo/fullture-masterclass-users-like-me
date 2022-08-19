@@ -1,12 +1,17 @@
 .thumb {
     position: relative;
     display: block;
-    margin: 0 auto;
+    margin: 0;
     object-fit: cover;
     width: 64px;
     height: 64px;
-    border-radius: 50%;
+    border-radius: var(--radius-circle);
     z-index: 1;
+}
+
+.thumb-small {
+    width: 48px;
+    height: 48px;
 }
 
 .thumb-large {

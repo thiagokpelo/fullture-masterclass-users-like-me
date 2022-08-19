@@ -1,20 +1,30 @@
 .app-suggestion {
+    margin-top: 24px;
 }
 
-.suggestion {
+.suggestion-title {
+    margin-bottom: 16px;
+}
+
+.suggestion-list {
     display: grid;
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr; */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 16px;
 }
 
-@media screen and (min-width: 600px) {
-    .suggestion {
+.suggestion-item-description {
+    margin: 8px 0 12px;
+}
+
+/* @media screen and (min-width: 600px) {
+    .suggestion-list {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media screen and (min-width: 960px) {
-    .suggestion {
+    .suggestion-list {
         grid-template-columns: repeat(4, 1fr);
     }
-}
+} */

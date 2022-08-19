@@ -1,12 +1,13 @@
 .card {
-    background-color: #fff;
-    border-radius: 12px;
+    background-color: var(--white);
+    border-radius: var(--radius-large);
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.24);
     overflow: hidden;
 }
 
 .card-content {
     display: flex;
+    flex: 1;
     flex-direction: column;
     padding: 24px;
 }
@@ -16,15 +17,18 @@
 }
 
 .card-footer-button {
+    display: flex;
+    align-items: center;
+    flex: 0;
     border: 0;
-    border-top: 1px solid #efefef;
+    border-top: 1px solid #d0d7de;
     width: 100%;
     text-align: left;
     padding: 16px 24px;
-    background-color: #fff;
+    background-color: var(--white);
     cursor: pointer;
 }
 
 .card-footer-button:hover {
-    background-color: #efefef;
+    background-color: #d0d7de;
 }

@@ -1,7 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+
+html, body {
+    min-height: 100vh;
+}
+
 body {
     color: #696969;
-    font-family: Helvetica, Arial, sans-serif;
-    background-image: linear-gradient(to bottom, #9122f3 0%, #9122f3 20%, #fff 20%, #fff 100%);
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to bottom, var(--purple) 0%, var(--purple) 20%, var(--white) 20%, var(--white) 100%);
 }
 
 a {
@@ -10,6 +17,16 @@ a {
 
 a:hover {
     color: #000;
+}
+
+.link-with-icon {
+    color: inherit;
+    display: inline-flex;
+    align-items: center;
+}
+
+.link-with-icon span {
+    color: inherit;
 }
 
 ul {

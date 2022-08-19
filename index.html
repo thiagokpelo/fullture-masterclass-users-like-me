@@ -4,34 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>users_like.me</title>
 
-    <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/global.css">
-    <link rel="stylesheet" href="./styles/layout.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./images/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="./images/favicon-32x32.png" type="image/png">
 
-    <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/footer.css">
-    <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/suggestion.css">
-    <link rel="stylesheet" href="./styles/typography.css">
-    <link rel="stylesheet" href="./styles/thumb.css">
-    <link rel="stylesheet" href="./styles/image.css">
-    <link rel="stylesheet" href="./styles/profile.css">
-    <link rel="stylesheet" href="./styles/card.css">
-    <link rel="stylesheet" href="./styles/info-card.css">
-    <link rel="stylesheet" href="./styles/button.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="./styles/pages/home.css">
 </head>
 <body class="app-layout">
     <header class="app-header layout">
         <h1 class="logo">
             <a href="index.html">users_like.me</a>
         </h1>
-        <span class="button">Following 1 user</span>
+        <div class="menu">
+            <button class="menu-trigger">
+                Following 1 user
+                <span class="material-symbols-outlined">
+                    expand_more
+                    </span>
+            </button>
+
+            <ul class="menu-content card">
+                <li class="menu-item">
+                    <img class="thumb thumb-small" src="./images/imagem2.jpg" alt="John Doe picture">
+
+                    <div class="menu-item-content">
+                        <span class="heading-5">John Doe</span>
+                        <address class="heading-6">city, country</address>
+                    </div>
+
+                    <button class="btn btn-small btn-danger">Unfollow</button>
+                </li>
+
+                <li role="separator"></li>
+
+                <li class="menu-item">
+                    <img class="thumb thumb-small" src="./images/imagem3.jpeg" alt="John Doe picture">
+
+                    <div class="menu-item-content">
+                        <span class="heading-5">John Doe</span>
+                        <address class="heading-6">city, country</address>
+                    </div>
+
+                    <button class="btn btn-small btn-danger">Unfollow</button>
+                </li>
+
+                <li role="separator"></li>
+
+                <li class="menu-item">
+                    <img class="thumb thumb-small" src="./images/imagem4.png" alt="John Doe picture">
+
+                    <div class="menu-item-content">
+                        <span class="heading-5">John Doe</span>
+                        <address class="heading-6">city, country</address>
+                    </div>
+
+                    <button class="btn btn-small btn-danger">Unfollow</button>
+                </li>
+            </ul>
+        </div>
     </header>
 
     <main class="app-main layout">
-        <h2 class="app-title">Find new users like you</h2>
+        <h2 class="app-title heading-1">Find new users like you</h2>
 
         <div class="profile card">
             <div class="profile-hero"></div>
@@ -44,49 +84,57 @@
                     <button class="btn btn-secondary">Try the next one</button>
                 </div>
 
-                <h3 class="profile-title">Thiago Kpelo</h3>
+                <h3 class="heading-3">Thiago Kpelo</h3>
 
                 <address>são paulo / sp</address>
             </div>
         </div>
         
-        <div class="card personal-info">
+        <div class="card info-card">
             <div class="card-content">
-                <h4 class="profile-subtitle">Personal info</h4>
+                <h4 class="heading-4">Personal info</h4>
 
                 <ul>
                     <li>born at: BR</li>
                     <li>age: 34 years old</li>
                 </ul>
             </div>
-            <button class="card-footer-button">See more</button>
+            <button class="card-footer-button">
+                <span class="material-symbols-outlined">
+                    expand_more
+                    </span> See more
+            </button>
         </div>
 
-        <div class="card contact-info">
+        <div class="card info-card">
             <div class="card-content">
-                <h4 class="profile-subtitle">Contact info</h4>
+                <h4 class="heading-4">Contact info</h4>
 
                 <ul class="list">
                     <li>email: <a href="mailto:thiagokpelo@gmail.com">thiagokpelo@gmail.com</a></li>
                     <li>phone: <a href="tel:+5511999999999">11 9 9999 9999</a></li>
                 </ul>
             </div>
-            <button class="card-footer-button">See more</button>
+            <button class="card-footer-button">
+                <span class="material-symbols-outlined">
+                    expand_more
+                    </span> See more
+            </button>
         </div>
     </main>
 
     <aside class="app-suggestion layout">
-        <h3>Suggestion for you</h3>
+        <h3 class="suggestion-title heading-2">Suggestion for you</h3>
     
-        <div class="suggestion">
+        <div class="suggestion-list">
             <article class="suggestion-item card">
                 <div class="card-content-small">
                     <img class="thumb" src="./images/imagem2.jpg" alt="Foto do John Doe">
     
-                    <h4>John Doe</h3>
-                    <h5>CEO</h4>
+                    <h4 class="heading-5">John Doe</h4>
+                    <h5>CEO</h5>
         
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <p class="suggestion-item-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
         
                     <button class="btn btn-primary btn-small">Follow</button>
                 </div>
@@ -96,10 +144,10 @@
                 <div class="card-content-small">
                     <img class="thumb" src="./images/imagem3.jpeg" alt="John Doe picture">
     
-                    <h4>John Doe</h3>
-                    <h5>CEO</h4>
+                    <h4 class="heading-5">John Doe</h4>
+                    <h5>CEO</h5>
         
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <p class="suggestion-item-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
         
                     <button class="btn btn-primary btn-small">Follow</button>
                 </div>
@@ -109,10 +157,10 @@
                 <div class="card-content-small">
                     <img class="thumb" src="./images/imagem4.png" alt="John Doe picture">
     
-                    <h4>John Doe</h3>
-                    <h5>CEO</h4>
+                    <h4 class="heading-5">John Doe</h4>
+                    <h5>CEO</h5>
         
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <p class="suggestion-item-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
     
                     <button class="btn btn-primary btn-small">Follow</button>
                 </div>
@@ -122,10 +170,10 @@
                <div class="card-content-small">
                     <img class="thumb" src="./images/imagem5.jpg" alt="John Doe picture">
     
-                   <h4>John Doe</h3>
-                   <h5>CEO</h4>
+                    <h4 class="heading-5">John Doe</h4>
+                    <h5>CEO</h5>
         
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <p class="suggestion-item-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
     
                    <button class="btn btn-primary btn-small">Follow</button>
                </div>
@@ -135,10 +183,10 @@
                 <div class="card-content-small">
                     <img class="thumb" src="./images/imagem6.jpg" alt="Foto do John Doe">
     
-                    <h4>John Doe</h3>
-                    <h5>CEO</h4>
+                    <h4 class="heading-5">John Doe</h4>
+                    <h5>CEO</h5>
     
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <p class="suggestion-item-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
     
                     <button class="btn btn-primary btn-small">Follow</button>
                 </div>
@@ -148,10 +196,10 @@
                 <div class="card-content-small">
                     <img class="thumb" src="./images/imagem7.jpg" alt="John Doe picture">
     
-                    <h4>John Doe</h3>
-                    <h5>CEO</h4>
+                    <h4 class="heading-5">John Doe</h4>
+                    <h5>CEO</h5>
     
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <p class="suggestion-item-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
     
                     <button class="btn btn-primary btn-small">Follow</button>
                 </div>
@@ -161,10 +209,10 @@
                 <div class="card-content-small">
                     <img class="thumb" src="./images/imagem8.jpg" alt="John Doe picture">
     
-                    <h4>John Doe</h3>
-                    <h5>CEO</h4>
+                    <h4 class="heading-5">John Doe</h4>
+                    <h5>CEO</h5>
     
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <p class="suggestion-item-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
     
                     <button class="btn btn-primary btn-small">Follow</button>
                 </div>
@@ -174,10 +222,10 @@
                 <div class="card-content-small">
                     <img class="thumb" src="./images/imagem9.jpeg" alt="John Doe picture">
     
-                    <h4>John Doe</h3>
-                    <h5>CEO</h4>
+                    <h4 class="heading-5">John Doe</h4>
+                    <h5>CEO</h5>
     
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                    <p class="suggestion-item-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
     
                     <button class="btn btn-primary btn-small">Follow</button>
                 </div>

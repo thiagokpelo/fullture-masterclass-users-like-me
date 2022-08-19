@@ -14,16 +14,6 @@
     transform: scale(1.2);
 }
 
-.profile-title {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.profile-subtitle {
-    font-size: 18px;
-    font-weight: bold;
-}
-
 .profile-actions-group {
     margin: 16px auto;
 }
