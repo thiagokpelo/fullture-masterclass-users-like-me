@@ -1,0 +1,14 @@
+.caneta {
+    background-color: blue;
+}
+
+.highlight {
+    width: 100%;
+    height: 300px;
+    border: 1px solid red;
+    background-image: url(../images/imagem1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-image: url(https://i.pinimg.com/originals/77/ca/e4/77cae41e89e89e3792fb10b1e4d8a872.jpg); */
+}

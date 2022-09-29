@@ -1,0 +1,60 @@
+header {
+    background-color: blueviolet;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 32px;
+}
+
+h1 {
+    color: white;
+}
+
+body {
+    /* background-image: linear-gradient(
+        to bottom, 
+        blueviolet 0%, 
+        blueviolet 25%, 
+        white 25%, 
+        white 100%
+    ); */
+
+    background-image: url(../images/imagem1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h2 {
+    color: white;
+}
+
+img {
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+#personal {
+    background-color: aqua;
+}
+
+section {
+    background-color: red;
+}
+
+/* 
+#contact {
+    background-color: chartreuse;
+} */
+
+.lapizeira {
+    background-color: gold;
+}
+
+section ul {
+    background-color: black;
+}
