@@ -1,60 +1,101 @@
-header {
-    background-color: blueviolet;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 10%;
-    padding-right: 10%;
+.app-header {
+    background-color: #9122f3;
+    padding: 8px 10%;
     margin-bottom: 32px;
+    box-shadow: 0 8px 10px 4px rgba(0, 0, 0, 0.24);
 }
 
-h1 {
-    color: white;
+.app-footer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-footer nav ul {
+    display: flex;
+    gap: 8px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 36px;
+    /* text-shadow: 10px 0 2px  rgba(0, 0, 0, 1); */
 }
 
 body {
-    /* background-image: linear-gradient(
+    height: 100vh;
+    background-image: linear-gradient(
         to bottom, 
-        blueviolet 0%, 
-        blueviolet 25%, 
-        white 25%, 
-        white 100%
-    ); */
+        #9122f3 0%, 
+        #9122f3 25%, 
+        #fff 25%, 
+        #fff 100%
+    );
 
+    /* background-image: url(../images/imagem1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+}
+
+.thumb {
+    position: relative;
+    display: block;
+    object-fit: cover;
+    /* object-position: top right; */
+    width: 200px;
+    height: 200px;
+    background-color: #f00;
+    border-radius: 50%;
+    margin: 0 auto;
+    /** explicar na proxima aula o z-index **/
+    z-index: 1;
+}
+
+.main-title {
+    color: #fff;
+    text-align: center;
+    font-size: 48px;
+}
+
+.card {
+    background-color: #fff;
+    margin-left: 10%;
+    margin-right: 10%;
+    box-shadow: 0 8px 10px 4px rgba(0, 0, 0, 0.24);
+    margin-bottom: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.card-content {
+    padding: 24px;
+}
+
+.display-name {
+    font-size: 24px;
+    text-align: center;
+}
+
+.overline {
+    text-align: center;
+    font-weight: bold;
+}
+
+.actions-group {
+    margin: 16px auto 24px;
+    width: fit-content;
+}
+
+.highlight-cover {
+    width: 100%;
+    height: 150px;
     background-image: url(../images/imagem1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
-
-h2 {
-    color: white;
-}
-
-img {
-    object-fit: cover;
-    width: 250px;
-    height: 250px;
-    background-color: red;
-    border-radius: 50%;
-}
-
-#personal {
-    background-color: aqua;
-}
-
-section {
-    background-color: red;
-}
-
-/* 
-#contact {
-    background-color: chartreuse;
-} */
-
-.lapizeira {
-    background-color: gold;
-}
-
-section ul {
-    background-color: black;
+    filter: blur(10px);
+    margin-bottom: -150px;
+    transform: scale(1.2);
 }

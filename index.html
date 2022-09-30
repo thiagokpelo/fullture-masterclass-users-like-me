@@ -6,104 +6,72 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>users_like.me</title>
 
-        <link rel="stylesheet" href="./styles/index-2.css">
+        <link rel="stylesheet" href="./styles/reset.css">
         <link rel="stylesheet" href="./styles/index.css">
-
-        <!-- <style>
-            h1 {
-                color:blue;
-                font-size: 56px;
-            }
-        </style> -->
     </head>
     <body>
         <!-- Cabeçalho -->
-        <header>
-            <!-- <h1 style="color:blue;font-size:56px;">users_like.me</h1> -->
-            <h1>users_like.me</h1>
-
-            <!-- Exemplo de ancoras -->
-            <!-- <nav>
-                <ul>
-                    <li><a href="#personal">Personal info</a></li>
-                    <li><a href="#contact">Contact info</a></li>
-                </ul>
-            </nav> -->
-
-            <!-- <h2>users_like.me</h2>
-        <h3>users_like.me</h3>
-        <h4>users_like.me</h4>
-        <h5>users_like.me</h5>
-        <h6>users_like.me</h6> -->
+        <header class="app-header">
+            <h1 class="logo">users_like.me</h1>
         </header>
         
         <!-- Conteúdo Principal -->
         <main>
-            <h2>Find new users like you</h2>
+            <h2 class="main-title">Find new users like you</h2>
 
-            <section>
-                <!-- Imagem com caminho relativo -->
-                <img src="./images/imagem1.jpg">
+            <section class="card">
+                <div class="highlight-cover"></div>
+                
+                <div class="card-content">
+                    <img class="thumb" src="./images/imagem1.jpg">
 
-                <!-- Imagem com caminho "path" absoluto -->
-                <!-- <img src="https://s1.static.brasilescola.uol.com.br/be/conteudo/images/as-montanhas-diferenciam-se-pela-altitude-mais-elevada-em-relacao-as-outras-formas-relevo-5926cccf2e122.jpg"> -->
-                
-                <button>Follow</button>
+                    <div class="actions-group">
+                        <button>Follow</button>
 
-                <button>Try the next one</button>
-                
-                <h3 class="meu-nome">Thiago Kpelo</h3>
-                
-                <address>são paulo / brazil</address>
+                        <button>Try the next one</button>
+                    </div>
+                    
+                    <h3 class="display-name">Thiago Kpelo</h3>
+                    
+                    <address class="overline">são paulo / brazil</address>
+                </div>
             </section>
 
-            <section id="personal">
-                <h4>Personal info</h4>
+            <section class="card" id="personal">
+                <div class="card-content">
+                    <h4>Personal info</h4>
 
-                <ul>
-                    <li>Born at: US</li>
-                    <li>Age: 34 years old</li>
-                </ul>
+                    <ul>
+                        <li>Born at: US</li>
+                        <li>Age: 34 years old</li>
+                    </ul>
+                </div>
 
                 <button>See more</button>
             </section>
 
-            <!-- <ol>
-                <li>Senhor dos anéis</li>
-                <li>Matrix</li>
-                <li>O Máskara</li>
-            </ol>
+            <section class="card" id="contact">
+                <div class="card-content">
+                    <h4>Contact info</h4>
 
-            <dl>
-                <dt>Nome</dt>
-                <dd>Thiago Kpelo</dd>
+                    <ul>
+                        <li>Email: <a href="mailto:mail@mail.com">mail@mail.com</a></li>
+                        <li>Phone: <a href="tel:+5511999999999">11 99999-9999</a></li>
+                    </ul>
+                </div>
 
-                <dt>E-mail</dt>
-                <dd>thiagokpelo@gmail.com</dd>
-            </dl> -->
-
-            <section id="contact">
-                <h4>Contact info</h4>
-
-                <ul class="lapizeira caneta">
-                    <li>Email: <a href="mailto:mail@mail.com">mail@mail.com</a></li>
-                    <li>Phone: <a href="tel:+5511999999999">11 99999-9999</a></li>
-                </ul>
-
-                <button class="lapizeira">See more</button>
+                <button>See more</button>
             </section>
-
-            <div>
-                <h2>Another section</h2>
-            </div>
         </main>
 
         <!-- Rodapé -->
-        <footer>
+        <footer class="app-footer">
             <nav>
                 <ul>
                     <li><a href="#">Who are we</a></li>
+                    <li role="separator">|</li>
                     <li><a href="#">Faq</a></li>
+                    <li role="separator">|</li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
