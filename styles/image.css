@@ -1,0 +1,13 @@
+.thumb {
+    position: relative;
+    display: block;
+    object-fit: cover;
+    /* object-position: top right; */
+    width: 200px;
+    height: 200px;
+    background-color: #f00;
+    border-radius: 50%;
+    margin: 0 auto;
+    /** explicar na proxima aula o z-index **/
+    z-index: 1;
+}

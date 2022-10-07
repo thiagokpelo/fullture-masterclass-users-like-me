@@ -1,0 +1,16 @@
+body {
+    font-family: Arial;
+    height: 100vh;
+    background-image: linear-gradient(
+        to bottom, 
+        #9122f3 0%, 
+        #9122f3 25%, 
+        #fff 25%, 
+        #fff 100%
+    );
+
+    /* background-image: url(../images/imagem1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+}

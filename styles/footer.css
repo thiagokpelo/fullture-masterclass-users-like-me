@@ -1,0 +1,11 @@
+.app-footer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-footer nav ul {
+    display: flex;
+    gap: 8px;
+}

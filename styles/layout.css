@@ -1,0 +1,10 @@
+.layout {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.app-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 64px auto 128px;
+}

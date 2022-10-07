@@ -1,0 +1,12 @@
+.app-header {
+    display: flex;
+    align-items: center;
+    background-color: #9122f3;
+    box-shadow: 0 8px 10px 4px rgba(0, 0, 0, 0.24);
+}
+
+.logo {
+    color: #fff;
+    font-size: 28px;
+    /* text-shadow: 10px 0 2px  rgba(0, 0, 0, 1); */
+}

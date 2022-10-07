@@ -7,39 +7,50 @@
         <title>users_like.me</title>
 
         <link rel="stylesheet" href="./styles/reset.css">
-        <link rel="stylesheet" href="./styles/index.css">
+        <link rel="stylesheet" href="./styles/card.css">
+        <link rel="stylesheet" href="./styles/footer.css">
+        <link rel="stylesheet" href="./styles/global.css">
+        <link rel="stylesheet" href="./styles/header.css">
+        <link rel="stylesheet" href="./styles/image.css">
+        <link rel="stylesheet" href="./styles/profile.css">
+        <link rel="stylesheet" href="./styles/typography.css">
+        <link rel="stylesheet" href="./styles/button.css">
+        <link rel="stylesheet" href="./styles/layout.css">
+        <link rel="stylesheet" href="./styles/main.css">
+        <link rel="stylesheet" href="./styles/info-card.css">
+        <link rel="stylesheet" href="./styles/app-layout.css">
     </head>
-    <body>
+    <body class="app-layout">
         <!-- Cabeçalho -->
-        <header class="app-header">
+        <header class="app-header layout">
             <h1 class="logo">users_like.me</h1>
         </header>
         
         <!-- Conteúdo Principal -->
-        <main>
-            <h2 class="main-title">Find new users like you</h2>
+        <main class="layout app-main">
+            <h2 class="heading-1 main-title">Find new users like you</h2>
 
-            <section class="card">
+            <section class="profile card">
                 <div class="highlight-cover"></div>
                 
                 <div class="card-content">
                     <img class="thumb" src="./images/imagem1.jpg">
 
                     <div class="actions-group">
-                        <button>Follow</button>
+                        <button class="btn btn-primary">Follow</button>
 
-                        <button>Try the next one</button>
+                        <button class="btn btn-secondary">Try the next one</button>
                     </div>
                     
-                    <h3 class="display-name">Thiago Kpelo</h3>
+                    <h3 class="heading-3 display-name">Thiago Kpelo</h3>
                     
-                    <address class="overline">são paulo / brazil</address>
+                    <address class="heading-4 overline">são paulo / brazil</address>
                 </div>
             </section>
 
-            <section class="card" id="personal">
+            <section class="info-card card" id="personal">
                 <div class="card-content">
-                    <h4>Personal info</h4>
+                    <h4 class="heading-2">Personal info</h4>
 
                     <ul>
                         <li>Born at: US</li>
@@ -47,12 +58,12 @@
                     </ul>
                 </div>
 
-                <button>See more</button>
+                <button class="card-bottom-btn">See more</button>
             </section>
 
-            <section class="card" id="contact">
+            <section class="info-card card" id="contact">
                 <div class="card-content">
-                    <h4>Contact info</h4>
+                    <h4 class="heading-2">Contact info</h4>
 
                     <ul>
                         <li>Email: <a href="mailto:mail@mail.com">mail@mail.com</a></li>
@@ -60,7 +71,7 @@
                     </ul>
                 </div>
 
-                <button>See more</button>
+                <button class="card-bottom-btn">See more</button>
             </section>
         </main>
 

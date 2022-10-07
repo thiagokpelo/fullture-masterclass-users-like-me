@@ -1,0 +1,26 @@
+.app-main {
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: grid;
+    gap: 16px;
+    grid-template-columns: 1fr;
+}
+
+.main-title {
+    /* flex: 1 100%; */
+    color: #fff;
+    text-align: center;
+    align-self: center;
+}
+
+@media screen and (min-width: 600px) {
+    .app-main {
+        /* flex-direction: column; */
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .main-title {
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+}

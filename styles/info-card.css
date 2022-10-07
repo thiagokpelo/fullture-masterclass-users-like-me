@@ -1,0 +1,9 @@
+.info-card {
+    flex: 1;
+}
+
+@media screen and (min-width: 600px) {
+    .info-card {
+        grid-column: span 2;
+    }
+}

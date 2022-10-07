@@ -1,0 +1,28 @@
+.profile {
+    /* flex: 1 100%; */
+    /* grid-column-start: 1;
+    grid-column-end: 3; */
+}
+
+.actions-group {
+    margin: 16px auto 24px;
+    width: fit-content;
+}
+
+.highlight-cover {
+    width: 100%;
+    height: 150px;
+    background-image: url(../images/imagem1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    margin-bottom: -150px;
+    transform: scale(1.2);
+}
+
+@media screen and (min-width: 600px) {
+    .profile {
+        grid-column: 1/5;
+    }
+}
