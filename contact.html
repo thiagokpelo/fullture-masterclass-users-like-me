@@ -4,69 +4,109 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>users_like.me | Contact</title>
+
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./images/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="./images/favicon-32x32.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="./styles/variables.css">
+        <link rel="stylesheet" href="./styles/reset.css">
+        <link rel="stylesheet" href="./styles/card.css">
+        <link rel="stylesheet" href="./styles/footer.css">
+        <link rel="stylesheet" href="./styles/global.css">
+        <link rel="stylesheet" href="./styles/header.css">
+        <link rel="stylesheet" href="./styles/image.css">
+        <link rel="stylesheet" href="./styles/profile.css">
+        <link rel="stylesheet" href="./styles/typography.css">
+        <link rel="stylesheet" href="./styles/button.css">
+        <link rel="stylesheet" href="./styles/layout.css">
+        <link rel="stylesheet" href="./styles/main.css">
+        <link rel="stylesheet" href="./styles/info-card.css">
+        <link rel="stylesheet" href="./styles/suggestions.css">
+        <link rel="stylesheet" href="./styles/menu.css">
 </head>
-<body>
-    <h1>Página de contato</h1>
+<body class="app-layout">
+    <header class="app-header layout">
+        <div class="link-with-icon">
+            <span class="material-symbols-outlined">
+            arrow_back_ios
+            </span>
+            <a href="index.html">Go back</a>
+        </div>
+    </header>
 
-    <form>
-        <label for="trilha-id">Trilha</label>
-        <input
-          id="trilha-id"
-          type="text"
-          name="trilha"
-          placeholder="HTML e CSS"
-          value="Javascript"
-        >
+    <main class="app-main app-form layout">
+        <h2 class="app-title heading-1">Contact</h2>
 
-        <br>
-        <br>
+        <form class="form card">
+            <div class="card-content form__content">
+                <div class="form__group form__group__column form__field--width-100">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" placeholder="Thiago Kpelo" required>
+                </div>
 
-        <label for="email-id">E-mail</label>
-        <input
-          id="email-id"
-          type="email"
-          name="email"
-          placeholder="mail@mail.com"
-        >
+                <div class="form__group form__group__column form__field--width-50">
+                    <label for="email">Email</label>
+                    <input id="email" email="email" type="email" placeholder="thiagokpelo@gmail.com" required>
+                </div>
 
-        <br>
-        <br>
+                <div class="form__group form__group__column form__field--width-50">
+                    <label for="phone">Phone</label>
+                    <input id="phone" name="phone" type="tel" placeholder="(11) 90000 0000">
+                </div>
 
-        <label for="telefone-id">Telefone</label>
-        <input
-          id="telefone-id"
-          type="tel"
-          name="telefone"
-          placeholder="11 9 0000-0000"
-        >
+                <div class="form__group form__group__column form__field--width-100">
+                    <label for="message">Message</label>
+                    <textarea placeholder="Your message..." id="message" name="message" cols="30" rows="10" minlength="3" maxlength="10" required></textarea>
+                </div>
 
-        <br>
-        <br>
+                <fieldset>
+                    <legend>Subject</legend>
 
-        <label for="pass-id">Senha</label>
-        <input
-          id="pass-id"
-          type="password"
-          name="senha"
-        >
+                    <div class="form__group">
+                        <input id="problem" type="radio" name="subject" value="problem" required>
+                        <label for="problem">Problem</label>
+                    </div>
 
-        <br>
-        <br>
+                    <div class="form__group">
+                        <input id="suggestion" type="radio" name="subject" value="suggestion" required>
+                        <label for="suggestion">Suggestion</label>
+                    </div>
 
-        <label>
-            <input type="checkbox" name="termos"> Aceito
-        </label>
+                    <div class="form__group">
+                        <input id="other" type="radio" name="subject" value="other" required>
+                        <label for="other">Other</label>
+                    </div>
+                </fieldset>
 
-        <br>
-        <br>
+                <div class="form__group">
+                    <input id="newsletter" type="checkbox" name="news">
+                    <label for="newsletter">Would you like to receive our newsletter?</label>
+                </div>
 
-        <label for="comentarios-id">Comentarios</label>
-        <textarea rows="10" cols="50" id="comentarios-id" name="comentarios">Me chamo thiago</textarea>
+                <button class="btn btn-primary" type="submit">Send</button>
+            </div>
+        </form>
+    </main>
 
-        <input type="hidden" name="oculto" value="Thiago Kpelo">
-        
-        <button>Enviar</button>
-    </form>
+    <footer class="app-footer layout">
+        <nav>
+            <ul class="navigation-list">
+                <li>
+                    <a href="#">Who am i</a>
+                </li>
+                <li>
+                    <a href="#">FAQ</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>

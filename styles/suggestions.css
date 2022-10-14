@@ -1,0 +1,21 @@
+.suggestions-title {
+    margin: 24px 0;
+}
+
+.suggestions-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+/* @media screen and (min-width: 500px) {
+    .suggestions-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .suggestions-list {
+        grid-template-columns: repeat(5, 1fr);
+    }
+} */

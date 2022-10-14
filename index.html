@@ -6,24 +6,69 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>users_like.me</title>
 
-        <link rel="stylesheet" href="./styles/reset.css">
-        <link rel="stylesheet" href="./styles/card.css">
-        <link rel="stylesheet" href="./styles/footer.css">
-        <link rel="stylesheet" href="./styles/global.css">
-        <link rel="stylesheet" href="./styles/header.css">
-        <link rel="stylesheet" href="./styles/image.css">
-        <link rel="stylesheet" href="./styles/profile.css">
-        <link rel="stylesheet" href="./styles/typography.css">
-        <link rel="stylesheet" href="./styles/button.css">
-        <link rel="stylesheet" href="./styles/layout.css">
-        <link rel="stylesheet" href="./styles/main.css">
-        <link rel="stylesheet" href="./styles/info-card.css">
-        <link rel="stylesheet" href="./styles/app-layout.css">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon-16x16.png" sizes="16x16" type="image/png">
+        <link rel="icon" href="images/favicon-32x32.png" sizes="32x32" type="image/png">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link rel="stylesheet" href="styles/pages/home.css">
     </head>
     <body class="app-layout">
         <!-- Cabeçalho -->
         <header class="app-header layout">
-            <h1 class="logo">users_like.me</h1>
+            <h1 class="logo">
+                <a href="index.html">users_like.me</a>
+            </h1>
+
+            <div class="menu">
+                <button class="menu-btn-trigger">
+                    Following 1 user
+                    <span class="material-symbols-outlined">
+                        expand_more
+                    </span>
+                </button>
+
+                <ul class="menu-content card">
+                    <li class="menu-item">
+                        <img class="thumb thumb-small" src="./images/imagem2.jpg" alt="John Doe picture">
+    
+                        <div class="menu-item-content">
+                            <span class="heading-5">John Doe</span>
+                            <address class="heading-6">city, country</address>
+                        </div>
+    
+                        <button class="btn btn-small btn-danger">Unfollow</button>
+                    </li>
+    
+                    <li role="separator"></li>
+    
+                    <li class="menu-item">
+                        <img class="thumb thumb-small" src="./images/imagem3.jpeg" alt="John Doe picture">
+    
+                        <div class="menu-item-content">
+                            <span class="heading-5">John Doe</span>
+                            <address class="heading-6">city, country</address>
+                        </div>
+    
+                        <button class="btn btn-small btn-danger">Unfollow</button>
+                    </li>
+    
+                    <li role="separator"></li>
+    
+                    <li class="menu-item">
+                        <img class="thumb thumb-small" src="./images/imagem4.png" alt="John Doe picture">
+    
+                        <div class="menu-item-content">
+                            <span class="heading-5">John Doe</span>
+                            <address class="heading-6">city, country</address>
+                        </div>
+    
+                        <button class="btn btn-small btn-danger">Unfollow</button>
+                    </li>
+                </ul>
+            </div>
         </header>
         
         <!-- Conteúdo Principal -->
@@ -34,12 +79,12 @@
                 <div class="highlight-cover"></div>
                 
                 <div class="card-content">
-                    <img class="thumb" src="./images/imagem1.jpg">
+                    <img class="thumb thumb-large profile-image" src="./images/imagem1.jpg">
 
                     <div class="actions-group">
-                        <button class="btn btn-primary">Follow</button>
+                        <button class="btn btn-primary btn-profile-primary">Follow</button>
 
-                        <button class="btn btn-secondary">Try the next one</button>
+                        <button class="btn btn-secondary btn-profile-secondary">Try the next one</button>
                     </div>
                     
                     <h3 class="heading-3 display-name">Thiago Kpelo</h3>
@@ -58,7 +103,12 @@
                     </ul>
                 </div>
 
-                <button class="card-bottom-btn">See more</button>
+                <button class="card-bottom-btn">
+                    <span class="material-symbols-outlined">
+                        expand_more
+                    </span>
+                    See more
+                </button>
             </section>
 
             <section class="info-card card" id="contact">
@@ -71,9 +121,138 @@
                     </ul>
                 </div>
 
-                <button class="card-bottom-btn">See more</button>
+                <button class="card-bottom-btn">
+                    <span class="material-symbols-outlined">
+                        expand_more
+                    </span>
+                    See more
+                </button>
             </section>
         </main>
+
+        <!-- Seção de recomendados -->
+        <aside class="app-suggestions layout">
+            <h2 class="suggestions-title heading-2">Suggestions for you</h4>
+
+            <div class="suggestions-list">
+                <article class="card">
+                    <div class="card-content">
+                        <img class="thumb" src="images/imagem1.jpg" alt="John Doe">
+
+                        <h4 class="heading-5">John Doe</h4>
+                        <h5>CEO</h5>
+
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+
+                        <button class="btn btn-primary btn-small">Follow</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-content">
+                        <img class="thumb" src="images/imagem2.jpg" alt="John Doe">
+
+                        <h4 class="heading-5">John Doe</h4>
+                        <h5>CEO</h5>
+
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+
+                        <button class="btn btn-primary btn-small">Follow</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-content">
+                        <img class="thumb" src="images/imagem3.jpeg" alt="John Doe">
+
+                        <h4 class="heading-5">John Doe</h4>
+                        <h5>CEO</h5>
+
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+
+                        <button class="btn btn-primary btn-small">Follow</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-content">
+                        <img class="thumb" src="images/imagem4.png" alt="John Doe">
+
+                        <h4 class="heading-5">John Doe</h4>
+                        <h5>CEO</h5>
+
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+
+                        <button class="btn btn-primary btn-small">Follow</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-content">
+                        <img class="thumb" src="images/imagem5.jpg" alt="John Doe">
+
+                        <h4 class="heading-5">John Doe</h4>
+                        <h5>CEO</h5>
+
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+
+                        <button class="btn btn-primary btn-small">Follow</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-content">
+                        <img class="thumb" src="images/imagem6.jpg" alt="John Doe">
+
+                        <h4 class="heading-5">John Doe</h4>
+                        <h5>CEO</h5>
+
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+
+                        <button class="btn btn-primary btn-small">Follow</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-content">
+                        <img class="thumb" src="images/imagem7.jpg" alt="John Doe">
+
+                        <h4 class="heading-5">John Doe</h4>
+                        <h5>CEO</h5>
+
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+
+                        <button class="btn btn-primary btn-small">Follow</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-content">
+                        <img class="thumb" src="images/imagem8.jpg" alt="John Doe">
+
+                        <h4 class="heading-5">John Doe</h4>
+                        <h5>CEO</h5>
+
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+
+                        <button class="btn btn-primary btn-small">Follow</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-content">
+                        <img class="thumb" src="images/imagem9.jpeg" alt="John Doe">
+
+                        <h4 class="heading-5">John Doe</h4>
+                        <h5>CEO</h5>
+
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+
+                        <button class="btn btn-primary btn-small">Follow</button>
+                    </div>
+                </article>
+            </div>
+        </aside>
 
         <!-- Rodapé -->
         <footer class="app-footer">

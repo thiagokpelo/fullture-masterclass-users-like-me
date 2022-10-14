@@ -1,13 +1,15 @@
 .thumb {
-    position: relative;
+    --size: 64px;
     display: block;
     object-fit: cover;
     /* object-position: top right; */
-    width: 200px;
-    height: 200px;
-    background-color: #f00;
+    width: var(--size);
+    height: var(--size);
     border-radius: 50%;
-    margin: 0 auto;
-    /** explicar na proxima aula o z-index **/
-    z-index: 1;
+}
+
+.thumb-large {
+    --size: 200px;
+    width: var(--size);
+    height: var(--size);
 }

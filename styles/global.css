@@ -1,12 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0');
+
 body {
-    font-family: Arial;
-    height: 100vh;
+    color: var(--gray-dark);
+    /* font-family: Arial; */
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
     background-image: linear-gradient(
         to bottom, 
-        #9122f3 0%, 
-        #9122f3 25%, 
-        #fff 25%, 
-        #fff 100%
+        var(--purple) 0%, 
+        var(--purple) 25%, 
+        var(--white) 25%, 
+        var(--white) 100%
     );
 
     /* background-image: url(../images/imagem1.jpg);

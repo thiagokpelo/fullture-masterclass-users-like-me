@@ -6,7 +6,10 @@
 
 .actions-group {
     margin: 16px auto 24px;
-    width: fit-content;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
 }
 
 .highlight-cover {
@@ -21,8 +24,28 @@
     transform: scale(1.2);
 }
 
-@media screen and (min-width: 600px) {
+.profile-image {
+    position: relative;
+    margin: 0 auto;
+    /** explicar na proxima aula o z-index **/
+    z-index: 1;
+}
+
+@media screen and (min-width: 768px) {
     .profile {
         grid-column: 1/5;
+    }
+    
+    .actions-group {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .btn-profile-primary {
+        grid-column: 2/3;
+        justify-self: center;
+    }
+    
+    .btn-profile-secondary {
+        justify-self: flex-end;
     }
 }
