@@ -1,5 +1,6 @@
 .thumb {
     --size: 64px;
+
     display: block;
     object-fit: cover;
     /* object-position: top right; */
@@ -9,7 +10,7 @@
 }
 
 .thumb-large {
-    --size: 200px;
-    width: var(--size);
-    height: var(--size);
+    --sizeComOutroNome: 200px;
+    width: var(--sizeComOutroNome);
+    height: var(--sizeComOutroNome);
 }
