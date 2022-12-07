@@ -1,0 +1,35 @@
+body {
+    background-image: linear-gradient(
+        to bottom,
+        #9122f3 0%,
+        #9122f3 30%,
+        #fff 30%,
+        #fff 100%
+    );
+}
+
+.header-principal {
+    background-color: #9122f3;
+    padding: 4px;
+}
+
+.logo {
+    color: #fff;
+    margin-left: 16px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #fff;
+}
+
+.box {
+    background-color: #fff;
+    border-radius: 16px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}

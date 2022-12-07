@@ -5,18 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./styles/index.css">
+
     <title>Thiago Kpelo</title>
 </head>
 
 <body>
-    <header>
-        <h1>users_like.me</h1>
+    <header class="header-principal">
+        <!-- adicionar CSS de forma inline -->
+        <!-- <h1 style="color:red;border:1px solid black;">users_like.me</h1> -->
+        <h1 class="logo">users_like.me</h1>
     </header>
+
+    <section>
 
     <main>
         <h2 id="title">Find new users like you</h2>
     
-        <section>
+        <section class="box">
             <img src="./images/imagem1.jpg" alt="Ninja lego">
 
             <button>Follow</button>
@@ -30,8 +37,8 @@
             </address>
         </section>
 
-        <section>
-            <h4>Personal info</h4>
+        <section class="box">
+            <h4 id="personal-info-subtitle">Personal info</h4>
 
             <ul>
                 <li>Born at: US</li>
@@ -41,7 +48,7 @@
             <button>See more</button>
         </section>
 
-        <section>
+        <section class="box">
             <h4>Contact info</h4>
 
             <ul>
@@ -52,10 +59,11 @@
             <button>See more</button>
         </section>
     </main>
-
+</section>
     <footer>
         <a href="contact.html">Contact</a>
     </footer>
+
 
     <!-- Lista não ordenada -->
     <!-- <ul>
