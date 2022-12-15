@@ -1,8 +1,0 @@
-.info-card {
-    display: flex;
-    flex-direction: column;
-}
-
-.info-card__content {
-    flex: 1;
-}
