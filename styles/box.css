@@ -1,0 +1,10 @@
+.box {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 8px 10px 4px rgba(0, 0, 0, 0.24);
+    overflow: hidden;
+}
+
+.box-content {
+    padding: 16px;
+}

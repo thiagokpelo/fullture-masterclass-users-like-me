@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="./styles/index.css">
 
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/box.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    
     <title>Thiago Kpelo</title>
 </head>
 
@@ -18,49 +20,56 @@
         <h1 class="logo">users_like.me</h1>
     </header>
 
-    <section>
-
-    <main>
-        <h2 id="title">Find new users like you</h2>
+    <main class="content-principal">
+        <h2 class="title-principal" id="title">Find new users like you</h2>
     
-        <section class="box">
-            <img src="./images/imagem1.jpg" alt="Ninja lego">
+        <section class="box profile">
+            <div class="highlight"></div>
 
-            <button>Follow</button>
-
-            <button>Try the next one</button>
-
-            <h3>Thiago Kpelo</h3>
-
-            <address>
-                São Paulo / Brazil
-            </address>
+            <div class="box-content">
+                <img class="thumb" src="./images/imagem1.jpg" alt="Ninja lego">
+    
+                <button>Follow</button>
+    
+                <button>Try the next one</button>
+    
+                <h3>Thiago Kpelo</h3>
+    
+                <address>
+                    São Paulo / Brazil
+                </address>
+            </div>
+            
         </section>
 
-        <section class="box">
-            <h4 id="personal-info-subtitle">Personal info</h4>
+        <section class="box info">
+            <div class="box-content">
+                <h4 id="personal-info-subtitle">Personal info</h4>
 
-            <ul>
-                <li>Born at: US</li>
-                <li>Age: 34 years old</li>
-            </ul>
-            
+                <ul>
+                    <li>Born at: US</li>
+                    <li>Age: 34 years old</li>
+                </ul>
+            </div>
+
             <button>See more</button>
         </section>
 
-        <section class="box">
-            <h4>Contact info</h4>
+        <section class="box info">
+            <div class="box-content">
+                <h4>Contact info</h4>
 
-            <ul>
-                <li>Email: <a href="mailto:kpelo@gmail.com">Contact</a></li>
-                <li>Phone: <a href="tel:+551199999999">11 9 9999 9999</a></li>
-            </ul>
+                <ul>
+                    <li>Email: <a href="mailto:kpelo@gmail.com">Contact</a></li>
+                    <li>Phone: <a href="tel:+551199999999">11 9 9999 9999</a></li>
+                </ul>
+            </div>
 
             <button>See more</button>
         </section>
     </main>
-</section>
-    <footer>
+
+    <footer class="footer-principal">
         <a href="contact.html">Contact</a>
     </footer>
 
