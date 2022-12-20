@@ -16,7 +16,6 @@ body {
 
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
 }
 
 .title-principal {
@@ -31,7 +30,7 @@ body {
 }
 
 .info {
-    flex: 1 0%;
+    flex: 1 50%;
 }
 
 .thumb {
