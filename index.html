@@ -5,22 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Users like me</title>
+
+    <style>
+        /*
+         * Estrutura de uma Regra de CSS
+        */
+        /* seletor {
+            propriedade: valor;
+        } */
+
+        /* h1 {
+            color: brown;
+            border: 1px solid black;
+            background-color: yellow;
+        } */
+
+        /* body header#header-test {
+            background-color: royalblue !important;
+        }
+
+        header#header-test {
+            background-color: red !important;
+        } */
+    </style>
+
+    <link rel="stylesheet" href="./styles/home.css">
 </head>
 
 <body>
     <header>
+        <!-- CSS Inline-->
+        <!-- <h1 style="color: brown;border: 1px solid black;">users_like.me</h1> -->
         <h1>users_like.me</h1>
     </header>
 
     <main>
         <h2>Find new users like you</h2>
 
-        <section>
+        <section class="secao-com-fundo-amarelo">
             <!-- imagem externa com caminho absoluto -->
             <!-- <img src="https://i.kym-cdn.com/photos/images/newsfeed/001/701/988/50d.jpg"> -->
             
             <!-- imagem local com caminho relativo -->
-            <img src="./images/imagem1.jpg" alt="Ninja vermelho com faixa preta na cabeça">
+            <img src="./images/imagem1.jpg" alt="Red ninja with black headband">
 
             <!-- Botão criado a partir de um input do tipo button -->
             <!-- <input type="button" value="Follow"> -->
@@ -56,68 +83,9 @@
 
             <button>See more</button>
         </section>
-
-        <!-- Lista não ordenada -->
-        <!-- Unordered List -->
-        <ul>
-            <!-- List Item -->
-            <li>Maçã</li>
-            <li>Banana</li>
-            <li>Morango</li>
-            <li>
-                Banana
-                <ul>
-                    <li>Nanica</li>
-                    <li>Da Terra</li>
-                    <li>Prata</li>
-                </ul>
-            </li>
-        </ul>
-
-        <!-- Lista ordenada -->
-        <!-- Ordered List -->
-        <ol>
-            <li>Banana</li>
-            <li>Morango</li>
-            <li>
-                Maçã
-                <ul>
-                    <li>Verde</li>
-                    <li>Gala</li>
-                </ul>
-            </li>
-            <li>
-                Banana
-                <ol>
-                    <li>Nanica</li>
-                    <li>Da Terra</li>
-                    <li>Prata</li>
-                </ol>
-            </li>
-        </ol>
-
-        <!-- Lista de definição -->
-        <!-- Definition List -->
-        <dl>
-            <!-- Definition Title -->
-            <dt>Maçã</dt>
-            <!-- Definition Description -->
-            <dd>Fruta vermelha</dd>
-            <dt>Banana</dt>
-            <dd>Fruta amarela</dd>
-            <dt>Morango</dt>
-            <dd>Fruta vermelha</dd>
-        </dl>
-
-        <!-- <h1>Thiago Kpelo</h1>
-        <h2>Thiago Kpelo</h2>
-        <h3>Thiago Kpelo</h3>
-        <h4>Thiago Kpelo</h4>
-        <h5>Thiago Kpelo</h5>
-        <h6>Thiago Kpelo</h6> -->
     </main>
 
-    <footer>
+    <footer class="secao-com-fundo-amarelo">
         <nav>
             <ul>
                 <!-- Item de navegação com fins didáticos -->
