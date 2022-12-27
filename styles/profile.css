@@ -1,0 +1,33 @@
+.thumb {
+    /* display: block; */
+    /* margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto; */
+
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 16px;
+
+    position: relative;
+}
+
+.highlight {
+    width: 100%;
+    height: 150px;
+    background-image: url(./../images/imagem1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(10px);
+    margin-bottom: -150px;
+    transform: scale(1.2);
+}
+
+.profile-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

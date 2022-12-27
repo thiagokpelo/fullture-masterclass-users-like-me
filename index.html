@@ -8,30 +8,36 @@
 
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/box.css">
+    <link rel="stylesheet" href="./styles/profile.css">
+    <link rel="stylesheet" href="./styles/layout.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/index.css">
     
-    <title>Thiago Kpelo</title>
+    <title>users_like.me</title>
 </head>
 
-<body>
-    <header class="header-principal">
+<body class="app-layout">
+    <header class="header-principal layout">
         <!-- adicionar CSS de forma inline -->
         <!-- <h1 style="color:red;border:1px solid black;">users_like.me</h1> -->
         <h1 class="logo">users_like.me</h1>
     </header>
 
-    <main class="content-principal">
+    <main class="content-principal layout">
         <h2 class="title-principal" id="title">Find new users like you</h2>
     
         <section class="box profile">
             <div class="highlight"></div>
 
-            <div class="box-content">
+            <div class="profile-content box-content">
                 <img class="thumb" src="./images/imagem1.jpg" alt="Ninja lego">
     
-                <button>Follow</button>
-    
-                <button>Try the next one</button>
+                <div>
+                    <button>Follow</button>
+                    <button>Try the next one</button>
+                </div>
     
                 <h3>Thiago Kpelo</h3>
     
@@ -60,7 +66,7 @@
                 <h4>Contact info</h4>
 
                 <ul>
-                    <li>Email: <a href="mailto:kpelo@gmail.com">Contact</a></li>
+                    <li>Email: <a href="mailto:thiagokpelo@gmail.com">thiagokpelo@gmail.com</a></li>
                     <li>Phone: <a href="tel:+551199999999">11 9 9999 9999</a></li>
                 </ul>
             </div>
@@ -69,55 +75,17 @@
         </section>
     </main>
 
-    <footer class="footer-principal">
-        <a href="contact.html">Contact</a>
+    <footer class="footer-principal layout">
+        <nav>
+            <ul class="footer-navigation-list">
+                <li><a href="#">Who are we</a></li>
+                <!-- <li role="separator">|</li> -->
+                <li><a href="#">Faq</a></li>
+                <!-- <li role="separator">|</li> -->
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </footer>
-
-
-    <!-- Lista não ordenada -->
-    <!-- <ul>
-        <li>Born at: US</li>
-        <li>Age: 34 years old</li>
-        <li>Maçã</li>
-        <li>Pêra</li>
-    </ul> -->
-
-    <!-- Lista ordenada-->
-    <!-- <ol>
-        <li>Apple</li>
-        <li>Orange</li>
-        <li>Strawberry</li>
-        <li>Watermelon</li>
-    </ol> -->
-
-    <!-- Lista de definição-->
-    <!-- <dl>
-        <dt>HTML</dt>
-        <dd>HyperText Markup Language</dd>
-
-        <dt>CSS</dt>
-        <dd>Cascading Style Sheet</dd>
-    </dl> -->
-
-    
-
-    <!-- <a href="https://google.com">Google</a> -->
-    <!-- <img src="https://live.staticflickr.com/8743/16307619923_18fb9ac41b_b.jpg"> -->
-
-    <!-- Aqui usamos um elemento de paragrafo que pega uma linha inteira -->
-    <!-- <p>users_like.me</p> -->
-
-    <!-- Aqui usamos um elemento de span que pega apenas o tamanho do seu conteúdo -->
-    <!-- <span>Find new users like you</span> -->
-    
-    <!-- Elementos de títulos e subtítulos  -->
-    <!-- Lembrando que o H1 é o mais importante e o H6 é o menos importante -->
-    <!-- <h1>Titulo 1</h1>
-    <h2>Titulo 2</h2>
-    <h3>Titulo 3</h3>
-    <h4>Titulo 4</h4>
-    <h5>Titulo 5</h5>
-    <h6>Titulo 6</h6> -->
 </body>
 
 </html>

@@ -1,0 +1,10 @@
+.footer-principal {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.footer-navigation-list {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
