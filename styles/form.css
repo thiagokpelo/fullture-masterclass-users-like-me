@@ -1,0 +1,55 @@
+.app-form {
+    grid-row: 2 / span 2;
+    align-self: start;
+}
+
+.form__content {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+}
+
+.form__group {
+    display: flex;
+    width: 100%;
+    flex: 1 0 100%;
+    gap: 8px;
+}
+
+.form__group__column {
+    flex-direction: column;
+}
+
+.form__field--width-100 {
+    flex: 1 100%;
+}
+
+.form__field--width-50 {
+    flex: 1;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    border: 1px solid #d0d7de;
+    border-radius: var(--radius-large);
+    padding: 1rem;
+}
+
+fieldset {
+    flex: 1 100%;
+}
+
+@media screen and (max-width: 767px) {
+    .form__field--width-50 {
+        flex: 1 100%;
+    }
+}
+
+
+@media screen and (min-width: 600px) {
+    .form {
+        grid-column: span 2;
+    }
+}

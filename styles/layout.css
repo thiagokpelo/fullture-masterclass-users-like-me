@@ -6,5 +6,5 @@
 .app-layout {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 64px min-content 128px;
+    grid-template-rows: 64px min-content auto 128px;
 }

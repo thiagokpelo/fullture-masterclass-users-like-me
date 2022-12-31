@@ -4,9 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>users_like.me | Contact</title>
+
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./images/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="./images/favicon-32x32.png" type="image/png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <link rel="stylesheet" href="./styles/variables.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/box.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/form.css">
+    <link rel="stylesheet" href="./styles/image.css">
+    <link rel="stylesheet" href="./styles/profile.css">
+    <link rel="stylesheet" href="./styles/typography.css">
+    <link rel="stylesheet" href="./styles/button.css">
+    <link rel="stylesheet" href="./styles/layout.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/info-box.css">
+    <link rel="stylesheet" href="./styles/suggestions.css">
+    <link rel="stylesheet" href="./styles/menu.css">
 </head>
-<body>
-    <h1>Contact</h1>
+<body class="app-layout">
+    <header class="header-principal layout">
+        <div class="link-with-icon">
+            <span class="material-symbols-outlined">arrow_back_ios</span>
+            <a href="index.html">Go back</a>
+        </div>
+    </header>
+
+    <main class="content-principal app-form layout">
+        <h2 class="title-principal heading-1 display-name">Contact</h2>
+
+        <form class="form box">
+            <div class="box-content form__content">
+                <div class="form__group form__group__column form__field--width-100">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" placeholder="Thiago Kpelo" required>
+                </div>
+
+                <div class="form__group form__group__column form__field--width-50">
+                    <label for="email">Email</label>
+                    <input id="email" email="email" type="email" placeholder="thiagokpelo@gmail.com" required>
+                </div>
+
+                <div class="form__group form__group__column form__field--width-50">
+                    <label for="phone">Phone</label>
+                    <input id="phone" name="phone" type="tel" placeholder="(11) 90000 0000">
+                </div>
+
+                <div class="form__group form__group__column form__field--width-100">
+                    <label for="message">Message</label>
+                    <textarea placeholder="Your message..." id="message" name="message" cols="30" rows="10" minlength="3" maxlength="10" required></textarea>
+                </div>
+
+                <fieldset>
+                    <legend>Subject</legend>
+
+                    <div class="form__group">
+                        <input id="problem" type="radio" name="subject" value="problem" required>
+                        <label for="problem">Problem</label>
+                    </div>
+
+                    <div class="form__group">
+                        <input id="suggestion" type="radio" name="subject" value="suggestion" required>
+                        <label for="suggestion">Suggestion</label>
+                    </div>
+
+                    <div class="form__group">
+                        <input id="other" type="radio" name="subject" value="other" required>
+                        <label for="other">Other</label>
+                    </div>
+                </fieldset>
+
+                <div class="form__group">
+                    <input id="newsletter" type="checkbox" name="news">
+                    <label for="newsletter">Would you like to receive our newsletter?</label>
+                </div>
+
+                <button class="btn btn-primary" type="submit">Send</button>
+            </div>
+        </form>
+    </main>
+
+    <footer class="footer-principal layout">
+        <nav>
+            <ul class="footer-navigation-list">
+                <li><a href="#">Who am i</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>

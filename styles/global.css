@@ -1,0 +1,15 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(
+        to bottom,
+        #9122f3 0%,
+        #9122f3 30%,
+        #fff 30%,
+        #fff 100%
+    );
+    min-height: 100vh;
+}
+
+a {
+	color: inherit;
+}

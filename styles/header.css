@@ -1,6 +1,7 @@
 .header-principal {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
     grid-column-start: 1;
     grid-column-end: 3;
@@ -11,4 +12,17 @@
     padding-bottom: 80px;
     padding-left: 20px; */
     box-shadow: 0px 8px 10px 4px rgba(0, 0, 0, 0.24);
+}
+
+.logo {
+    font-size: 28px;
+    color: #fff;
+}
+
+.logo:hover {
+    text-decoration: underline;
+}
+
+.logo a {
+    text-decoration: none;
 }
