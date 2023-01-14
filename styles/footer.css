@@ -1,0 +1,14 @@
+.app-footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.footer-navigation-list {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.footer-navigation-list-item {
+    color: inherit;
+}

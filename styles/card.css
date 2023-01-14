@@ -1,0 +1,25 @@
+.card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 10px 4px rgba(0, 0, 0, 0.24);
+    overflow: hidden;
+}
+
+.card-content {
+    padding: 24px;
+}
+
+.card-button {
+    background-color: transparent;
+    padding: 12px 24px;
+    border: none;
+    border-top: 1px solid #d0d7de;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.24s ease-out;
+}
+
+.card-button:hover {
+    background-color: #d0d7de;
+}

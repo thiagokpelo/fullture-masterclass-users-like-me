@@ -1,0 +1,12 @@
+.app-main {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 12.5%;
+}
+
+.app-title {
+    color: #fff;
+    margin: 32px 0;
+    text-align: center;
+}

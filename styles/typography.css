@@ -1,0 +1,30 @@
+.display-name {
+    font-size: 64px;
+}
+
+.heading-1 {
+    font-size: 48px;
+}
+
+.heading-2 {
+    font-size: 28px;
+}
+
+.heading-3 {
+    font-size: 24px;
+}
+
+.heading-4 {
+    font-size: 20px;
+}
+
+.heading-5 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.overline {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}

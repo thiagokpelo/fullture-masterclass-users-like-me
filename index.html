@@ -29,68 +29,90 @@
         } */
     </style>
 
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/layout.css">
+    <link rel="stylesheet" href="./styles/typography.css">
+    <link rel="stylesheet" href="./styles/button.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/image.css">
+    <link rel="stylesheet" href="./styles/card.css">
+    <link rel="stylesheet" href="./styles/profile.css">
     <link rel="stylesheet" href="./styles/home.css">
 </head>
 
 <body>
-    <header>
+    <header class="app-header layout">
         <!-- CSS Inline-->
         <!-- <h1 style="color: brown;border: 1px solid black;">users_like.me</h1> -->
-        <h1>users_like.me</h1>
+        <h1 class="logo">users_like.me</h1>
     </header>
 
-    <main>
-        <h2>Find new users like you</h2>
+    <main class="app-main layout">
+        <h2 class="app-title heading-1">Find new users like you</h2>
 
-        <section class="secao-com-fundo-amarelo">
+        <section class="profile card">
+            <div class="profile-hero"></div>
             <!-- imagem externa com caminho absoluto -->
-            <!-- <img src="https://i.kym-cdn.com/photos/images/newsfeed/001/701/988/50d.jpg"> -->
+            <!-- <img style="border: 1px solid red" src="https://i.kym-cdn.com/photos/images/newsfeed/001/701/988/50d.jpg"> -->
             
-            <!-- imagem local com caminho relativo -->
-            <img src="./images/imagem1.jpg" alt="Red ninja with black headband">
+            <div class="profile-content card-content">
+                <!-- imagem local com caminho relativo -->
+                <img class="profile-thumb thumb" src="./images/imagem1.jpg" alt="Red ninja with black headband">
 
-            <!-- Botão criado a partir de um input do tipo button -->
-            <!-- <input type="button" value="Follow"> -->
+                <!-- Botão criado a partir de um input do tipo button -->
+                <!-- <input type="button" value="Follow"> -->
 
-            <button>Follow</button>
-            <button>Try the next one</button>
+                <div class="profile-actions">
+                    <button class="btn btn-primary">Follow</button>
+                    <button class="btn btn-secondary">Try the next one</button>
+                </div>
 
-            <h3>Thiago Kpelo</h3>
+                <h3 class="profile-username heading-2">Thiago Kpelo</h3>
 
-            <address>
-                São Paulo, Brazil
-            </address>
+                <address class="overline">
+                    São Paulo, Brazil
+                </address>
+            </div>
         </section>
 
-        <section>
-            <h4>Personal info</h4>
+        <section class="card">
+            <div class="card-content">
+                <h4 class="heading-3">Personal info</h4>
 
-            <ul>
-                <li>Born at: BR</li>
-                <li>Age: 34 years old</li>
-            </ul>
+                <ul>
+                    <li>Born at: BR</li>
+                    <li>Age: 34 years old</li>
+                </ul>
+            </div>
 
-            <button>See more</button>
+            <button class="card-button">See more</button>
         </section>
 
-        <section>
-            <h4>Contact info</h4>
+        <section class="card">
+            <div class="card-content">
+                <h4 class="heading-3">Contact info</h4>
 
-            <ul>
-                <li>Email: <a href="mailto:thiagokpelo@gmail.com">thiagokpelo@gmail.com</a></li>
-                <li>Phone: <a href="tel:+5511999999999">(+55) 11 9 9999-9999</a></li>
-            </ul>
+                <ul>
+                    <li>Email: <a href="mailto:thiagokpelo@gmail.com">thiagokpelo@gmail.com</a></li>
+                    <li>Phone: <a href="tel:+5511999999999">(+55) 11 9 9999-9999</a></li>
+                </ul>
+            </div>
 
-            <button>See more</button>
+            <button class="card-button">See more</button>
         </section>
     </main>
 
-    <footer class="secao-com-fundo-amarelo">
+    <footer class="app-footer layout">
         <nav>
-            <ul>
+            <ul class="footer-navigation-list">
                 <!-- Item de navegação com fins didáticos -->
-                <li><a target="_blank" href="https://www.google.com/maps/place/UBS+Our+Lady+of+Brazil+-+Armando+D'Arienzo/@-23.5657449,-46.6512535,16.99z/data=!4m13!1m7!3m6!1s0x94ce59c8da0aa315:0xd59f9431f2c9776a!2sAv.+Paulista+-+Bela+Vista,+S%C3%A3o+Paulo+-+SP!3b1!8m2!3d-23.5657393!4d-46.6512379!3m4!1s0x94ce59b82c77d5ed:0x17b10193f9445ed0!8m2!3d-23.5626911!4d-46.6492757">Minha localização</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <!-- <li><a class="footer-navigation-list-item" target="_blank" href="https://www.google.com/maps/place/UBS+Our+Lady+of+Brazil+-+Armando+D'Arienzo/@-23.5657449,-46.6512535,16.99z/data=!4m13!1m7!3m6!1s0x94ce59c8da0aa315:0xd59f9431f2c9776a!2sAv.+Paulista+-+Bela+Vista,+S%C3%A3o+Paulo+-+SP!3b1!8m2!3d-23.5657393!4d-46.6512379!3m4!1s0x94ce59b82c77d5ed:0x17b10193f9445ed0!8m2!3d-23.5626911!4d-46.6492757">Minha localização</a></li> -->
+                <li><a class="footer-navigation-list-item" href="#">How we are</a></li>
+                <li><a class="footer-navigation-list-item" href="#">Support</a></li>
+                <li><a class="footer-navigation-list-item" href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </footer>
