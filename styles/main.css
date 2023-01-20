@@ -1,12 +1,50 @@
 .app-main {
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
     gap: 16px;
     padding: 0 12.5%;
+
+    grid-column-start: 1;
+    grid-column-end: 7;
+
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .app-title {
     color: #fff;
-    margin: 32px 0;
+    margin: 32px 0 20px;
     text-align: center;
+
+    /* flex-shrink: 1; */
+    /* flex-grow: 1;
+    flex-basis: 100%; */
+
+    /* flex: ; */
+    /* flex: 1 0 100%; */
+
+    /* grid-column: 1/span 4; */
+}
+
+/* @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .app-main {
+        background-color: blue;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .app-main {
+        background-color: red;
+    }
+} */
+
+@media screen and (min-width: 600px) {
+    .app-main {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .app-title {
+        grid-column: 1/span 4;
+    }
 }

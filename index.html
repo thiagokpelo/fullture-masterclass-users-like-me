@@ -40,14 +40,17 @@
     <link rel="stylesheet" href="./styles/image.css">
     <link rel="stylesheet" href="./styles/card.css">
     <link rel="stylesheet" href="./styles/profile.css">
+    <link rel="stylesheet" href="./styles/info-section.css">
     <link rel="stylesheet" href="./styles/home.css">
 </head>
 
-<body>
+<body class="app-layout">
     <header class="app-header layout">
         <!-- CSS Inline-->
         <!-- <h1 style="color: brown;border: 1px solid black;">users_like.me</h1> -->
         <h1 class="logo">users_like.me</h1>
+
+        <button class="header-following-button">Following 1 user</button>
     </header>
 
     <main class="app-main layout">
@@ -66,8 +69,8 @@
                 <!-- <input type="button" value="Follow"> -->
 
                 <div class="profile-actions">
-                    <button class="btn btn-primary">Follow</button>
-                    <button class="btn btn-secondary">Try the next one</button>
+                    <button class="profile-primary-action btn btn-primary">Follow</button>
+                    <button class="profile-secondary-action btn btn-secondary">Try the next one</button>
                 </div>
 
                 <h3 class="profile-username heading-2">Thiago Kpelo</h3>
@@ -78,7 +81,7 @@
             </div>
         </section>
 
-        <section class="card">
+        <section class="info-section card">
             <div class="card-content">
                 <h4 class="heading-3">Personal info</h4>
 
@@ -91,7 +94,7 @@
             <button class="card-button">See more</button>
         </section>
 
-        <section class="card">
+        <section class="info-section card">
             <div class="card-content">
                 <h4 class="heading-3">Contact info</h4>
 

@@ -3,13 +3,17 @@
     border-radius: 12px;
     box-shadow: 0 8px 10px 4px rgba(0, 0, 0, 0.24);
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .card-content {
+    flex: 1;
     padding: 24px;
 }
 
 .card-button {
+    flex: 0 0;
     background-color: transparent;
     padding: 12px 24px;
     border: none;
@@ -18,6 +22,7 @@
     text-align: left;
     cursor: pointer;
     transition: background-color 0.24s ease-out;
+    color: inherit;
 }
 
 .card-button:hover {

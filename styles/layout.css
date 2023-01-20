@@ -2,3 +2,10 @@
     padding-left: 12.5%;
     padding-right: 12.5%;
 }
+
+.app-layout {
+    display: grid;
+
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 56px min-content 128px;
+}

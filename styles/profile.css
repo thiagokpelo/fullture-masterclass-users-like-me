@@ -1,6 +1,9 @@
-/* .profile {
-    position: relative;
-} */
+.profile {
+    /* position: relative; */
+    /* flex-grow: 1;
+    flex-basis: 100%; */
+    /* grid-column: 1/span 4; */
+}
 
 .profile-hero {
     width: 100%;
@@ -32,14 +35,31 @@
 }
 
 .profile-actions {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    display: grid;
     gap: 8px;
     margin: 16px;
+    width: 100%;
 }
 
 .profile-username {
     margin-bottom: 8px;
+}
+
+@media screen and (min-width: 600px) {
+    .profile {
+        grid-column: 1/span 4;
+    }
+
+    .profile-actions {
+        place-items: center;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .profile-primary-action {
+        grid-column-start: 2;
+    }
+
+    .profile-secondary-action {
+        justify-self: flex-end;
+    }
 }
