@@ -7,5 +7,5 @@
     display: grid;
 
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 56px min-content 128px;
+    grid-template-rows: 56px min-content min-content 128px;
 }

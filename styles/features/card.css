@@ -13,6 +13,9 @@
 }
 
 .card-button {
+    display: flex;
+    align-items: center;
+    gap: 4px;
     flex: 0 0;
     background-color: transparent;
     padding: 12px 24px;

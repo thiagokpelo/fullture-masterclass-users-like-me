@@ -6,51 +6,97 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Users like me</title>
 
-    <style>
-        /*
-         * Estrutura de uma Regra de CSS
-        */
-        /* seletor {
-            propriedade: valor;
-        } */
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <link rel="appe-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
 
-        /* h1 {
-            color: brown;
-            border: 1px solid black;
-            background-color: yellow;
-        } */
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-        /* body header#header-test {
-            background-color: royalblue !important;
-        }
-
-        header#header-test {
-            background-color: red !important;
-        } */
-    </style>
-
-    <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/global.css">
-    <link rel="stylesheet" href="./styles/layout.css">
-    <link rel="stylesheet" href="./styles/typography.css">
-    <link rel="stylesheet" href="./styles/button.css">
-    <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/footer.css">
-    <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/image.css">
-    <link rel="stylesheet" href="./styles/card.css">
-    <link rel="stylesheet" href="./styles/profile.css">
-    <link rel="stylesheet" href="./styles/info-section.css">
-    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="./styles/features/reset.css">
+    <link rel="stylesheet" href="./styles/features/variables.css">
+    <link rel="stylesheet" href="./styles/features/global.css">
+    <link rel="stylesheet" href="./styles/features/layout.css">
+    <link rel="stylesheet" href="./styles/features/typography.css">
+    <link rel="stylesheet" href="./styles/features/button.css">
+    <link rel="stylesheet" href="./styles/features/header.css">
+    <link rel="stylesheet" href="./styles/features/footer.css">
+    <link rel="stylesheet" href="./styles/features/main.css">
+    <link rel="stylesheet" href="./styles/features/suggestions.css">
+    <link rel="stylesheet" href="./styles/features/image.css">
+    <link rel="stylesheet" href="./styles/features/menu.css">
+    <link rel="stylesheet" href="./styles/features/card.css">
+    <link rel="stylesheet" href="./styles/features/profile.css">
+    <link rel="stylesheet" href="./styles/features/info-section.css">
+    <link rel="stylesheet" href="./styles/features/home.css">
 </head>
 
 <body class="app-layout">
     <header class="app-header layout">
         <!-- CSS Inline-->
         <!-- <h1 style="color: brown;border: 1px solid black;">users_like.me</h1> -->
-        <h1 class="logo">users_like.me</h1>
+        <h1 class="logo">
+            <a href="index.html">users_like.me</a>
+        </h1>
 
-        <button class="header-following-button">Following 1 user</button>
+        <div class="menu">
+            <button class="header-following-button menu-trigger">
+                Following 3 user
+                <span class="material-symbols-outlined">expand_more</span>
+            </button>
+
+            <div class="menu-content">
+                <div class="card">
+                    <header class="menu-content-header">
+                        <h2 class="menu-content-title heading-4">Following 3 user</h2>
+                        <span class="material-symbols-outlined">close</span>
+                    </header>
+                    <ul>
+                        <li class="menu-item">
+                            <img class="thumb thumb-small"  src="./images/imagem2.jpg" alt="Thiago Kpelo's picture">
+                            <div class="menu-item-content">
+                                <span class="heading-5">Thiago Kpelo</span>
+                                <address class="heading-6">São Paulo, SP</address>
+                            </div>
+
+                            <button class="btn btn-danger btn-small">
+                                Unfollow
+                            </button>
+                        </li>
+
+                        <li role="separator"></li>
+
+                        <li class="menu-item">
+                            <img class="thumb thumb-small"  src="./images/imagem3.jpeg" alt="Thiago Kpelo's picture">
+                            <div class="menu-item-content">
+                                <span class="heading-5">Thiago Kpelo</span>
+                                <address class="heading-6">São Paulo, SP</address>
+                            </div>
+
+                            <button class="btn btn-danger btn-small">
+                                Unfollow
+                            </button>
+                        </li>
+
+                        <li role="separator"></li>
+
+                        <li class="menu-item">
+                            <img class="thumb thumb-small"  src="./images/imagem4.png" alt="Thiago Kpelo's picture">
+                            <div class="menu-item-content">
+                                <span class="heading-5">Thiago Kpelo</span>
+                                <address class="heading-6">São Paulo, SP</address>
+                            </div>
+
+                            <button class="btn btn-danger btn-small">
+                                Unfollow
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </header>
 
     <main class="app-main layout">
@@ -58,15 +104,9 @@
 
         <section class="profile card">
             <div class="profile-hero"></div>
-            <!-- imagem externa com caminho absoluto -->
-            <!-- <img style="border: 1px solid red" src="https://i.kym-cdn.com/photos/images/newsfeed/001/701/988/50d.jpg"> -->
-            
             <div class="profile-content card-content">
-                <!-- imagem local com caminho relativo -->
-                <img class="profile-thumb thumb" src="./images/imagem1.jpg" alt="Red ninja with black headband">
 
-                <!-- Botão criado a partir de um input do tipo button -->
-                <!-- <input type="button" value="Follow"> -->
+                <img class="profile-thumb thumb thumb-large" src="./images/imagem1.jpg" alt="Red ninja with black headband">
 
                 <div class="profile-actions">
                     <button class="profile-primary-action btn btn-primary">Follow</button>
@@ -82,31 +122,140 @@
         </section>
 
         <section class="info-section card">
-            <div class="card-content">
+            <div class="info-section-content card-content">
                 <h4 class="heading-3">Personal info</h4>
 
-                <ul>
+                <ul class="info-section-content">
                     <li>Born at: BR</li>
                     <li>Age: 34 years old</li>
                 </ul>
             </div>
 
-            <button class="card-button">See more</button>
+            <button class="card-button">
+                <span class="material-symbols-outlined">expand_more</span> See more
+            </button>
         </section>
 
         <section class="info-section card">
-            <div class="card-content">
+            <div class="info-section-content card-content">
                 <h4 class="heading-3">Contact info</h4>
 
-                <ul>
+                <ul class="info-section-content">
                     <li>Email: <a href="mailto:thiagokpelo@gmail.com">thiagokpelo@gmail.com</a></li>
                     <li>Phone: <a href="tel:+5511999999999">(+55) 11 9 9999-9999</a></li>
                 </ul>
             </div>
 
-            <button class="card-button">See more</button>
+            <button class="card-button">
+                <span class="material-symbols-outlined">expand_more</span> See more
+            </button>
         </section>
     </main>
+
+    <aside class="app-suggestions layout">
+        <h2 class="heading-2">Suggestions for you</h2>
+
+        <div class="suggestions-list">
+            <article class="card">
+                <div class="suggestion-card-content card-content">
+                    <img src="./images/imagem1.jpg" alt="Lionel Messi" class="thumb">
+    
+                    <h4 class="heading-5">Lionel Messi</h4>
+                    <h5 class="heading-6">Software Engineer</h5>
+    
+                    <button class="btn btn-primary btn-small">Follow</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="suggestion-card-content card-content">
+                    <img src="./images/imagem2.jpg" alt="Lionel Messi" class="thumb">
+
+                    <h4 class="heading-5">Lionel Messi</h4>
+                    <h5 class="heading-6">Software Engineer</h5>
+
+                    <button class="btn btn-primary btn-small">Follow</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="suggestion-card-content card-content">
+                    <img src="./images/imagem3.jpeg" alt="Lionel Messi" class="thumb">
+
+                    <h4 class="heading-5">Lionel Messi</h4>
+                    <h5 class="heading-6">Software Engineer</h5>
+
+                    <button class="btn btn-primary btn-small">Follow</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="suggestion-card-content card-content">
+                    <img src="./images/imagem4.png" alt="Lionel Messi" class="thumb">
+    
+                    <h4 class="heading-5">Lionel Messi</h4>
+                    <h5 class="heading-6">Software Engineer</h5>
+    
+                    <button class="btn btn-primary btn-small">Follow</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="suggestion-card-content card-content">
+                    <img src="./images/imagem5.jpg" alt="Lionel Messi" class="thumb">
+
+                    <h4 class="heading-5">Lionel Messi</h4>
+                    <h5 class="heading-6">Software Engineer</h5>
+
+                    <button class="btn btn-primary btn-small">Follow</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="suggestion-card-content card-content">
+                    <img src="./images/imagem6.jpg" alt="Lionel Messi" class="thumb">
+    
+                    <h4 class="heading-5">Lionel Messi</h4>
+                    <h5 class="heading-6">Software Engineer</h5>
+    
+                    <button class="btn btn-primary btn-small">Follow</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="suggestion-card-content card-content">
+                    <img src="./images/imagem7.jpg" alt="Lionel Messi" class="thumb">
+    
+                    <h4 class="heading-5">Lionel Messi</h4>
+                    <h5 class="heading-6">Software Engineer</h5>
+    
+                    <button class="btn btn-primary btn-small">Follow</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="suggestion-card-content card-content">
+                    <img src="./images/imagem8.jpg" alt="Lionel Messi" class="thumb">
+    
+                    <h4 class="heading-5">Lionel Messi</h4>
+                    <h5 class="heading-6">Software Engineer</h5>
+    
+                    <button class="btn btn-primary btn-small">Follow</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="suggestion-card-content card-content">
+                    <img src="./images/imagem9.jpeg" alt="Lionel Messi" class="thumb">
+    
+                    <h4 class="heading-5">Lionel Messi</h4>
+                    <h5 class="heading-6">Software Engineer</h5>
+    
+                    <button class="btn btn-primary btn-small">Follow</button>
+                </div>
+            </article>
+        </div>
+    </aside>
 
     <footer class="app-footer layout">
         <nav>

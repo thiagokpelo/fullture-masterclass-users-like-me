@@ -33,7 +33,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;    
-    color: #fff;
+    color: var(--white);
 
     grid-column-start: 1;
     grid-column-end: 7;
@@ -44,6 +44,9 @@
 }
 
 .header-following-button {
+    display: flex;
+    align-items: center;
+    gap: 4px;
     background-color: transparent;
     border: 0;
     color: inherit;

@@ -1,0 +1,16 @@
+.thumb {
+    --size: 100px;
+
+    width: var(--size);
+    height: var(--size);
+
+    border-radius: var(--radius-circle);
+}
+
+.thumb-large {
+    --size: 200px;
+}
+
+.thumb-small {
+    --size: 40px;
+}
